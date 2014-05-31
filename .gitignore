@@ -10,6 +10,14 @@
 /build
 /dist
 /tags
+/Vendor/autoload.php
+/Vendor/composer
+
+/Plugin/DebugKit
+/Plugin/Migrations
+/Plugin/AssetCompress
+/Plugin/Cms
+/webroot/uploads
 
 # OS generated files #
 ######################

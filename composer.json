@@ -8,7 +8,8 @@
     ],
     "require": {
         "cakephp/cakephp": ">=2.5.1",
-		 "cakephp/debug_kit": "2.2.*"
+		 "cakephp/debug_kit": "2.2.*",
+		"cakedc/migrations" : "2.3.0"
     },
     "config": {
         "vendor-dir": "Vendor/"
