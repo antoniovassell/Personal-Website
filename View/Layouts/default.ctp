@@ -35,11 +35,11 @@
 
 	<!-- Fixed navbar -->
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-		<?php echo $this->element('header');?>
+		<?php echo $this->element('header'); ?>
 	</div>
 
-	<?php echo $this->fetch('content');?>
-	<?php echo $this->element('footer');?>
+	<?php echo $this->fetch('content'); ?>
+	<?php echo $this->element('footer'); ?>
 
 	<!-- Bootstrap core JavaScript
 	================================================== -->
@@ -61,5 +61,6 @@
 			'app.js'
 		));
 	?>
+	<?php echo $this->fetch('script'); ?>
 </body>
 </html>

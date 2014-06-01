@@ -155,7 +155,7 @@ if (isset($filePresent)):
 echo __d('cake_dev', 'To change the content of this page, edit: %s.<br />
 To change its layout, edit: %s.<br />
 You can also add some CSS styles for your pages at: %s.',
-	'APP/View/Pages/home.ctp', 'APP/View/Layouts/default.ctp', 'APP/webroot/css');
+	'APP/View/Pages/display.ctp', 'APP/View/Layouts/default.ctp', 'APP/webroot/css');
 ?>
 </p>
 

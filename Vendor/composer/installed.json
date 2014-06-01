@@ -220,5 +220,134 @@
             "cakephp",
             "migrations"
         ]
+    },
+    {
+        "name": "markstory/asset_compress",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/markstory/asset_compress.git",
+            "reference": "4ad0493ad0a0da98c0ab5ae87be5bab7102b33ca"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/markstory/asset_compress/zipball/4ad0493ad0a0da98c0ab5ae87be5bab7102b33ca",
+            "reference": "4ad0493ad0a0da98c0ab5ae87be5bab7102b33ca",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2014-05-26 04:04:55",
+        "type": "cakephp-plugin",
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Mark Story",
+                "homepage": "http://mark-story.com",
+                "role": "Author"
+            }
+        ],
+        "description": "An asset compression plugin for CakePHP. Provides file concatenation and a flexible filter system for preprocessing and minification.",
+        "homepage": "https://github.com/markstory/asset_compress",
+        "keywords": [
+            "assets",
+            "cakephp",
+            "coffee-script",
+            "less",
+            "minifier",
+            "sass"
+        ]
+    },
+    {
+        "name": "cakedc/search",
+        "version": "2.3.0",
+        "version_normalized": "2.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/CakeDC/search.git",
+            "reference": "31b86c1c9fd38a15c5cfb93b02081838da331f3e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/CakeDC/search/zipball/31b86c1c9fd38a15c5cfb93b02081838da331f3e",
+            "reference": "31b86c1c9fd38a15c5cfb93b02081838da331f3e",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "*",
+            "php": ">=5.3.0"
+        },
+        "time": "2014-05-23 16:34:48",
+        "type": "cakephp-plugin",
+        "extra": {
+            "installer-name": "Search"
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Cake Development Corporation",
+                "email": "team@cakedc.com",
+                "homepage": "http://cakedc.com"
+            }
+        ],
+        "description": "Search Plugin for CakePHP",
+        "homepage": "http://github.com/CakeDC/search",
+        "keywords": [
+            "cakephp",
+            "filter",
+            "post-redirect-get",
+            "prg",
+            "search"
+        ]
+    },
+    {
+        "name": "cakedc/utils",
+        "version": "1.4.3",
+        "version_normalized": "1.4.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/CakeDC/utils.git",
+            "reference": "ea48ed95b62517ddb046a46c17638726242121da"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/CakeDC/utils/zipball/ea48ed95b62517ddb046a46c17638726242121da",
+            "reference": "ea48ed95b62517ddb046a46c17638726242121da",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "*"
+        },
+        "time": "2014-03-30 21:42:43",
+        "type": "cakephp-plugin",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Cake Development Corporation",
+                "email": "team@cakedc.com",
+                "homepage": "http://cakedc.com"
+            }
+        ],
+        "description": "Utils Plugin for CakePHP",
+        "homepage": "http://cakedc.com",
+        "keywords": [
+            "cakephp",
+            "utility"
+        ]
     }
 ]
