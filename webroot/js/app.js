@@ -78,3 +78,10 @@
 		setPortfolio();
 	});
 })(jQuery);
+
+// Parallax
+(function($) {
+	$('#headerwrap').parallax("50%", -0.9);
+	$('#twrap').parallax("50%", -0.2, true);
+	$('#ticker').vTicker();
+})(jQuery);

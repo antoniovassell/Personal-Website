@@ -116,8 +116,10 @@ a:focus {
 }
 
 .navbar-default {
-	background-color: #384452;
+	background-color: #000;
 	border-color: transparent;
+	border-bottom: 1px solid #ccc;
+	opacity: 0.5;
 }
 
 .dropdown-menu {
@@ -205,7 +207,7 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: #00b3fe;
+	background-image: url(/electroswing/img/home/galaxy.jpg);
 	min-height: 550px;
 	padding-top: 100px;
 	padding-bottom: 0px;
@@ -288,24 +290,12 @@ a:focus {
 
 /* Testimonials Wrap */
 #twrap {
-	background: url(../img/t-back.jpg) no-repeat center top;
+	background-image: url(/electroswing/img/home/galaxy.jpg);
 	margin-top: 0px;
 	padding-top:60px;
 	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
 	min-height: 450px;
 	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 #twrap i {
@@ -318,6 +308,10 @@ a:focus {
 	color: white;
 	font-size: 15px;
 	line-height: 30px;
+}
+
+#twrap blockquote {
+	border-left: none;
 }
 
 /* clients logo */
@@ -458,3 +452,23 @@ csmall2 {
 	padding-right: 15px;
 	font-size: 18px;
 }
+
+.ticker-cont {
+
+}
+#ticker ul {
+	width: 100%;
+}
+#ticker h1 {
+	font-size: 5.1em;
+	text-align: center;
+	height: 1.5em;
+}
+.after-name {
+	font-size: 4.5em;
+	height: 56px;
+	line-height: 56px;
+	letter-spacing: 0.24242424242424243px;
+	color: #fff;
+}
+

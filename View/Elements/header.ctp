@@ -13,15 +13,7 @@
 			<li class="active"><a href="index.html">HOME</a></li>
 			<li><a href="about.html">ABOUT</a></li>
 			<li><a href="contact.html">CONTACT</a></li>
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">PAGES <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li><a href="blog.html">BLOG</a></li>
-					<li><a href="single-post.html">SINGLE POST</a></li>
-					<li><a href="portfolio.html">PORTFOLIO</a></li>
-					<li><a href="single-project.html">SINGLE PROJECT</a></li>
-				</ul>
-			</li>
+			<li><a href="contact.html">BLOG</a></li>
 		</ul>
 	</div><!--/.nav-collapse -->
 </div>
