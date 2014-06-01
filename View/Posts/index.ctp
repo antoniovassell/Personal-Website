@@ -39,6 +39,7 @@
 				<p><?php echo $this->Html->link(__('[Read More]'), array('controller' => 'posts', 'action' => 'view', $post['Post']['slug'])); ?></p>
 				<?php if ($isAdmin): ?>
 					<p><?php echo $this->Html->link(__('[Edit]'), array('controller' => 'posts', 'action' => 'edit', $post['Post']['id'])); ?></p>
+					<p><?php echo $this->Html->link(__('[Delete]'), array('controller' => 'posts', 'action' => 'delete', $post['Post']['id'])); ?></p>
 				<?php endif; ?>
 				<div class="hline"></div>
 				<div class="spacing"></div>

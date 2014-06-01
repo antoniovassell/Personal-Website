@@ -38,6 +38,7 @@
 		<?php echo $this->element('header'); ?>
 	</div>
 
+	<?php echo $this->fetch('flash'); ?>
 	<?php echo $this->fetch('content'); ?>
 	<?php echo $this->element('footer'); ?>
 
