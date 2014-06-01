@@ -10,10 +10,12 @@
 	</div>
 	<div class="navbar-collapse collapse navbar-right">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="index.html">HOME</a></li>
-			<li><a href="about.html">ABOUT</a></li>
-			<li><a href="contact.html">CONTACT</a></li>
-			<li><a href="contact.html">BLOG</a></li>
+			<li class="active">
+				<?php echo $this->Html->link(__('HOME'), '/');?>
+			</li>
+			<li>
+				<?php echo $this->Html->link(__('BLOG'), array('controller' => 'posts', 'action' => 'index'));?>
+			</li>
 		</ul>
 	</div><!--/.nav-collapse -->
 </div>
