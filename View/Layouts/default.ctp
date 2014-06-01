@@ -54,6 +54,10 @@
 			'/theme-assets/js/jquery.prettyPhoto.js',
 			'/theme-assets/js/jquery.isotope.min.js',
 			'/theme-assets/js/custom.js',
+			'jquery-parallax/jquery.parallax-1.1.3',
+			'jquery-parallax/jquery.localscroll-1.2.7-min',
+			'jquery-parallax/scrollTo-1.4.2-min',
+			'jquery.vticker.min',
 			'app.js'
 		));
 	?>

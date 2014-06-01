@@ -4,11 +4,15 @@
 <div id="headerwrap">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h3>Show your work with this beautiful theme</h3>
-				<h1>Eyecatching Bootstrap 3 Theme.</h1>
-				<h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
-				<h5>More Lorem Ipsum added here too.</h5>
+			<div class="ticker-cont col-lg-12">
+				<div id="ticker">
+					<ul>
+						<li><h1 class="name">I'M ANTONIO VASSELL</h1></li>
+						<li><h1 class=""><span class="glyphicon glyphicon-heart"></span> WEB DEVELOPMENT</h1></li>
+						<li><h1 class=""><span class="glyphicon glyphicon-heart"></span> MACHINE LEARNING</h1></li>
+					</ul>
+				</div>
+				<p class="after-name"><span class="span-text title-font">Web Designer &amp; Developer</span></p>
 			</div>
 			<div class="col-lg-8 col-lg-offset-2 himg">
 				<img src="/electroswing/theme-assets/img/browser.png" class="img-responsive">
@@ -231,9 +235,14 @@
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<i class="fa fa-comment-o"></i>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-				<h4><br/>Marcel Newman</h4>
-				<p>WEB DESIGNER - BLACKTIE.CO</p>
+				<blockquote>
+					<p>
+						I’m sorry, but I don’t want to be an emperor. That’s not my business. I don’t want to rule or conquer anyone. I should like to help everyone - if possible - Jew, Gentile - black man - white. We all want to help one another. Human beings are like that. We want to live by each other’s happiness - not by each other’s misery. We don’t want to hate and despise one another. In this world there is room for everyone. And the good earth is rich and can provide for everyone. The way of life can be free and beautiful, but we have lost the way...
+					</p>
+					<footer>
+						Charlie Chaplin <br/> in <br/> <cite title="Source Title">The Great Dictator</cite>
+					</footer>
+				</blockquote>
 			</div>
 		</div><! --/row -->
 	</div><! --/container -->
