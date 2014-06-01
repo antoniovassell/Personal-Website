@@ -12,6 +12,7 @@
 /tags
 /Vendor/autoload.php
 /Vendor/composer
+/.idea
 
 /Plugin/DebugKit
 /Plugin/Migrations
