@@ -65,4 +65,19 @@ class PostsController extends AppController {
 		}
 		$this->data = $this->Post->findById($id);
 	}
+
+/**
+ * Delete post
+ *
+ * @param int $id
+ * @return void
+ */
+	public function delete($id) {
+		if ($id) {
+			if ($this->Post->delete($id)) {
+				$this->Session->setFlash(__('Post Deleted'));
+				return $this->redirect('index');
+			}
+		}
+	}
 }
