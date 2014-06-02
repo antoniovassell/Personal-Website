@@ -55,7 +55,6 @@
 <div id="portfoliowrap">
 	<h3><?php echo __('GALLERY'); ?></h3>
 	<?php echo $this->Html->image('home/test-run.PNG'); ?>
-
 	</div><!-- portfolio container -->
 </div><!--/Portfoliowrap -->
 
@@ -73,13 +72,7 @@
 		</div>
 
 		<div class="col-lg-3">
-			<h4>Frequently Asked</h4>
-			<div class="hline"></div>
-			<p><a href="#">How cool is this theme?</a></p>
-			<p><a href="#">Need a nice good-looking site?</a></p>
-			<p><a href="#">Is this theme retina ready?</a></p>
-			<p><a href="#">Which version of Font Awesome uses?</a></p>
-			<p><a href="#">Free support is integrated?</a></p>
+			<?php echo $this->element('Posts/popular_post_titles'); ?>
 		</div>
 		<div class="col-lg-3">
 			<?php echo $this->element('Posts/latest_post_titles'); ?>

@@ -30,7 +30,8 @@ class PostFixture extends CakeTestFixture {
 			'comment_count' => 0,
 			'preview' => 'There is alot of info here',
 			'image' => '',
-			'category_id' => 1
+			'category_id' => 1,
+			'published' => true
 		),
 		array(
 			'id' => '6',
@@ -44,7 +45,8 @@ class PostFixture extends CakeTestFixture {
 			'comment_count' => 0,
 			'preview' => 'Gracious me',
 			'image' => '/uploads/images/pg-50-depp-1-alcon.jpg',
-			'category_id' => 2
+			'category_id' => 2,
+			'published' => true
 		),
 		array(
 			'id' => '7',
@@ -58,7 +60,8 @@ class PostFixture extends CakeTestFixture {
 			'comment_count' => 0,
 			'preview' => '<p>test</p>',
 			'image' => 'test',
-			'category_id' => 2
+			'category_id' => 2,
+			'published' => true
 		)
 	);
 }

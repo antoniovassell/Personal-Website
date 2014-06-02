@@ -55,6 +55,29 @@ class PostTest extends CakeTestCase {
 	}
 
 /**
+ * Test Get recent posts list
+ *
+ * @return array 	List of recent post in full
+ */
+	public function testGetPopularPostsList() {
+		$post = $this->Post->find('all',
+			array(
+				'order' => 'post_view_count DESC',
+				'conditions' => array('published' => true),
+				'fields' => array(
+					'Post.id',
+					'Post.slug',
+					'Post.title',
+					'Post.post_view_count',
+					'Post.date_published'
+				)
+			)
+		);
+		$result = $this->Post->getPopularPostsList();
+		$this->assertEquals($post, $result);
+	}
+
+/**
  * tearDown method
  *
  * @return void

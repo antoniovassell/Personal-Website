@@ -130,6 +130,39 @@ class Post extends AppModel {
 				'limit' => $limit,
 				'conditions' => array(
 					'published' => true
+				),
+				'fields' => array(
+					'Post.id',
+					'Post.slug',
+					'Post.title',
+					'Post.post_view_count',
+					'Post.date_published'
+				)
+			)
+		);
+		return $posts;
+	}
+
+/**
+ * Get recent post list
+ *
+ * @param int $limit
+ * @return array
+ */
+	public function getPopularPostsList($limit = 5) {
+		$posts = $this->find('all',
+			array(
+				'order' => 'post_view_count DESC',
+				'limit' => $limit,
+				'conditions' => array(
+					'published' => true
+				),
+				'fields' => array(
+					'Post.id',
+					'Post.slug',
+					'Post.title',
+					'Post.post_view_count',
+					'Post.date_published'
 				)
 			)
 		);
