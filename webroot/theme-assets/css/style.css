@@ -472,3 +472,9 @@ csmall2 {
 	color: #fff;
 }
 
+.sub-heading {
+	padding-top: 70px;
+}
+.sub-heading h1{
+	padding-left: 10px;
+}

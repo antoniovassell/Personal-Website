@@ -36,9 +36,10 @@
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<?php echo $this->element('header'); ?>
 	</div>
-
-	<?php echo $this->fetch('flash'); ?>
-	<?php echo $this->fetch('content'); ?>
+	<div id="content-wrapper">
+		<?php echo $this->fetch('flash'); ?>
+		<?php echo $this->fetch('content'); ?>
+	</div>
 	<?php echo $this->element('footer'); ?>
 
 	<!-- Bootstrap core JavaScript
