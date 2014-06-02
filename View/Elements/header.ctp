@@ -16,6 +16,18 @@
 			<li>
 				<?php echo $this->Html->link(__('BLOG'), array('controller' => 'posts', 'action' => 'index'));?>
 			</li>
+			<li>
+				<a href="https://twitter.com/Antoniovassell" target="_blank"><i class="fa fa-twitter"></i></a>
+			</li>
+			<li>
+				<a href="https://plus.google.com/+AntonioVassell" target="_blank"><i class="fa fa-google-plus"></i></a>
+			</li>
+			<li>
+				<a href="https://www.facebook.com/antonio.vassell" target="_blank"><i class="fa fa-facebook"></i></a>
+			</li>
+			<li>
+				<a href="http://instagram.com/antonio_vassell" target="_blank"><i class="fa fa-instagram"></i></a>
+			</li>
 		</ul>
 	</div><!--/.nav-collapse -->
 </div>
