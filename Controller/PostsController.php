@@ -94,4 +94,15 @@ class PostsController extends AppController {
 			return $this->Post->getRecentPostsList();
 		}
 	}
+
+/**
+ * Get recent post list
+ *
+ * @return array
+ */
+	public function popular_post_list() {
+		if ($this->request->is('requested')) {
+			return $this->Post->getPopularPostsList();
+		}
+	}
 }
