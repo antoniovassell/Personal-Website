@@ -83,4 +83,15 @@ class PostsController extends AppController {
 			}
 		}
 	}
+
+/**
+ * Get recent post list
+ *
+ * @return array
+ */
+	public function recent_post_list() {
+		if ($this->request->is('requested')) {
+			return $this->Post->getRecentPostsList();
+		}
+	}
 }
