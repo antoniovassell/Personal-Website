@@ -3,6 +3,7 @@ App::uses('AppController', 'Controller');
 /**
  * Posts Controller
  *
+ * @property Post $Post
  */
 
 class PostsController extends AppController {
@@ -35,6 +36,7 @@ class PostsController extends AppController {
 				return $this->redirect('index');
 			}
 		}
+		$this->set($this->Post->setItems());
 	}
 
 /**
@@ -64,6 +66,7 @@ class PostsController extends AppController {
 			}
 		}
 		$this->data = $this->Post->findById($id);
+		$this->set($this->Post->setItems());
 	}
 
 /**

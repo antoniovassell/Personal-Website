@@ -5,7 +5,7 @@ App::uses('View', 'Model');
  * View Test Case
  *
  */
-class ViewTest extends CakeTestCase {
+class PostViewTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,7 +13,7 @@ class ViewTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.view',
+		'app.postView',
 		'app.post'
 	);
 
@@ -24,7 +24,7 @@ class ViewTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->View = ClassRegistry::init('View');
+		$this->PostView = ClassRegistry::init('PostView');
 	}
 
 /**
@@ -33,7 +33,7 @@ class ViewTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->View);
+		unset($this->PostView);
 
 		parent::tearDown();
 	}

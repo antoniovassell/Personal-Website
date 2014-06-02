@@ -1,10 +1,11 @@
 <?php
 App::uses('AppModel', 'Model');
 /**
- * Comment Model
+ * PostView Model
  *
+ * @property Post $Post
  */
-class Comment extends AppModel {
+class PostView extends AppModel {
 
 /**
  * Validation rules
@@ -12,19 +13,9 @@ class Comment extends AppModel {
  * @var array
  */
 	public $validate = array(
-		'name' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty')
-			),
-		),
-		'email_address' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty')
-			),
-		),
-		'comment' => array(
-			'notEmpty' => array(
-				'rule' => array('notEmpty')
+		'post_id' => array(
+			'numeric' => array(
+				'rule' => array('numeric')
 			),
 		),
 		'date' => array(
@@ -34,8 +25,10 @@ class Comment extends AppModel {
 		),
 	);
 
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
 /**
- * Belongs To
+ * belongsTo associations
  *
  * @var array
  */

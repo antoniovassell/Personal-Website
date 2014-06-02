@@ -6,25 +6,11 @@
 class PostFixture extends CakeTestFixture {
 
 /**
- * Fields
+ * Import table definition
  *
- * @var array
+ * @var string
  */
-	public $fields = array(
-		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false, 'key' => 'primary'),
-		'slug' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
-		'title' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
-		'text' => array('type' => 'text', 'null' => false, 'default' => null, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
-		'date_published' => array('type' => 'datetime', 'null' => true, 'default' => null),
-		'created' => array('type' => 'datetime', 'null' => false, 'default' => null),
-		'modified' => array('type' => 'datetime', 'null' => false, 'default' => null),
-		'view_count' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
-		'comment_count' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
-		'indexes' => array(
-			'PRIMARY' => array('column' => 'id', 'unique' => 1)
-		),
-		'tableParameters' => array('charset' => 'latin1', 'collate' => 'latin1_swedish_ci', 'engine' => 'InnoDB')
-	);
+	public $import = 'Post';
 
 /**
  * Records
@@ -33,16 +19,46 @@ class PostFixture extends CakeTestFixture {
  */
 	public $records = array(
 		array(
-			'id' => 1,
-			'slug' => 1,
-			'title' => 1,
-			'text' => 'Lorem ipsum dolor sit amet, aliquet feugiat. Convallis morbi fringilla gravida, phasellus feugiat dapibus velit nunc, pulvinar eget sollicitudin venenatis cum nullam, vivamus ut a sed, mollitia lectus. Nulla vestibulum massa neque ut et, id hendrerit sit, feugiat in taciti enim proin nibh, tempor dignissim, rhoncus duis vestibulum nunc mattis convallis.',
-			'date_published' => '2014-06-01 01:16:37',
-			'created' => '2014-06-01 01:16:37',
-			'modified' => '2014-06-01 01:16:37',
-			'view_count' => 1,
-			'comment_count' => 1
+			'id' => '5',
+			'slug' => 'excellence_is_key_to_an_innovation_that_actually_makes_sense',
+			'title' => 'Excellence is key to an innovation that actually makes sense',
+			'content' => 'This is some test content',
+			'date_published' => null,
+			'created' => '2014-06-01 10:18:57',
+			'modified' => '2014-06-02 01:06:14',
+			'post_view_count' => 0,
+			'comment_count' => 0,
+			'preview' => 'There is alot of info here',
+			'image' => '',
+			'category_id' => 1
 		),
+		array(
+			'id' => '6',
+			'slug' => 'stephen_hawking_transcendence_looks_at_the_implications_of_artificial_intelligence_-_but_are_we_taking_ai_seriously_enough',
+			'title' => 'Stephen Hawking: \'Transcendence looks at the implications of artificial intelligence - but are we taking AI seriously enough?',
+			'content' => 'This is some test content',
+			'date_published' => null,
+			'created' => '2014-06-02 00:47:51',
+			'modified' => '2014-06-02 00:52:48',
+			'post_view_count' => 0,
+			'comment_count' => 0,
+			'preview' => 'Gracious me',
+			'image' => '/uploads/images/pg-50-depp-1-alcon.jpg',
+			'category_id' => 2
+		),
+		array(
+			'id' => '7',
+			'slug' => 'test',
+			'title' => 'test',
+			'content' => 'This is more test content',
+			'date_published' => null,
+			'created' => '2014-06-02 01:03:35',
+			'modified' => '2014-06-02 01:05:39',
+			'post_view_count' => 0,
+			'comment_count' => 0,
+			'preview' => '<p>test</p>',
+			'image' => 'test',
+			'category_id' => 2
+		)
 	);
-
 }

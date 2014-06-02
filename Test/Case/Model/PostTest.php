@@ -14,7 +14,7 @@ class PostTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.post',
-		'app.view'
+		'app.postView'
 	);
 
 /**
@@ -25,6 +25,15 @@ class PostTest extends CakeTestCase {
 	public function setUp() {
 		parent::setUp();
 		$this->Post = ClassRegistry::init('Post');
+	}
+
+/**
+ * Test Get recent post in full
+ *
+ * @return array 	List of recent post in full
+ */
+	public function testGetRecentFull() {
+
 	}
 
 /**
