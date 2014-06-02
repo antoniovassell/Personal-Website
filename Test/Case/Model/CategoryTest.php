@@ -37,14 +37,15 @@ class CategoryTest extends CakeTestCase {
 		$post = array(
 			'title' => 'Just for test',
 			'content' => 'Just for test',
-			'date_published' => null,
+			'date_published' => date('Y-m-d H:i:s'),
 			'created' => '2014-06-02 01:03:35',
 			'modified' => '2014-06-02 01:05:39',
-			'post_view_count' => '0',
-			'comment_count' => '0',
+			'post_view_count' => 0,
+			'comment_count' => 0,
 			'preview' => '<p>test</p>',
 			'image' => 'test',
-			'category_id' => '1'
+			'category_id' => 1,
+			'published' => true
 		);
 		$categories = $this->Category->getCategoriesWithTotalPost();
 		$this->Category->Post->save($post);

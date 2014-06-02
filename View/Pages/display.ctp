@@ -81,15 +81,8 @@
 			<p><a href="#">Which version of Font Awesome uses?</a></p>
 			<p><a href="#">Free support is integrated?</a></p>
 		</div>
-
 		<div class="col-lg-3">
-			<h4>Latest Posts</h4>
-			<div class="hline"></div>
-			<p><a href="single-post.html">Our new site is live now.</a></p>
-			<p><a href="single-post.html">Retina ready is not an option.</a></p>
-			<p><a href="single-post.html">Bootstrap 3 framework is the best.</a></p>
-			<p><a href="single-post.html">You need this theme, buy it now.</a></p>
-			<p><a href="single-post.html">This theme is what you need.</a></p>
+			<?php echo $this->element('Posts/latest_post_titles'); ?>
 		</div>
 
 	</div><! --/row -->

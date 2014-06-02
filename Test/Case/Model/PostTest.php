@@ -4,6 +4,7 @@ App::uses('Post', 'Model');
 /**
  * Post Test Case
  *
+ * @property Post $Post
  */
 class PostTest extends CakeTestCase {
 
@@ -13,8 +14,10 @@ class PostTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
+		'app.category',
 		'app.post',
-		'app.postView'
+		'app.postView',
+		'app.comment'
 	);
 
 /**
@@ -28,12 +31,27 @@ class PostTest extends CakeTestCase {
 	}
 
 /**
- * Test Get recent post in full
+ * Test Get recent posts list
  *
  * @return array 	List of recent post in full
  */
-	public function testGetRecentFull() {
-
+	public function testGetRecentPostsList() {
+		$post = array(
+			'title' => 'Just for test',
+			'content' => 'Just for test',
+			'date_published' => date('Y-m-d H:i:s'),
+			'created' => '2014-06-02 01:03:35',
+			'modified' => '2014-06-02 01:05:39',
+			'post_view_count' => 0,
+			'comment_count' => 0,
+			'preview' => '<p>test</p>',
+			'image' => 'test',
+			'category_id' => 1,
+			'published' => true
+		);
+		$this->Post->save($post);
+		$result = $this->Post->getRecentPostsList();
+		$this->assertEquals($post['date_published'], $result[0]['Post']['date_published']);
 	}
 
 /**

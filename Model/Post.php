@@ -83,12 +83,14 @@ class Post extends AppModel {
 /**
  * Get recent post in full
  *
+ * @param int $limit
  * @return array 	List of recent post in full
  */
-	public function getRecentFull() {
+	public function getRecentFull($limit = 5) {
 		$posts = $this->find('all',
 			array(
-				'order' => 'date_published DESC'
+				'order' => 'date_published DESC',
+				'limit' => $limit
 			)
 		);
 		return $posts;
@@ -113,5 +115,24 @@ class Post extends AppModel {
 	public function setItems() {
 		$categories = $this->Category->find('list');
 		return compact('categories');
+	}
+
+/**
+ * Get recent post list
+ *
+ * @param int $limit
+ * @return array
+ */
+	public function getRecentPostsList($limit = 5) {
+		$posts = $this->find('all',
+			array(
+				'order' => 'date_published DESC',
+				'limit' => $limit,
+				'conditions' => array(
+					'published' => true
+				)
+			)
+		);
+		return $posts;
 	}
 }
