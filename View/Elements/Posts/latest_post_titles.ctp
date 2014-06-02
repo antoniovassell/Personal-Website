@@ -3,6 +3,7 @@
 <div class="hline"></div>
 <?php foreach ($posts as $post): ?>
 	<p>
+		<i class="fa fa-file-text"></i>
 		<?php
 		$title = substr($post['Post']['title'], 0, 50);
 		echo $this->Html->link(
