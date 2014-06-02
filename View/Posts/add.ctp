@@ -16,6 +16,7 @@
 			<?php echo $this->Form->input('image'); ?>
 			<?php echo $this->Form->input('preview', array('id' => 'preview-content')); ?>
 			<?php echo $this->Form->input('content', array('id' => 'post-content')); ?>
+			<?php echo $this->Form->input('category_id', array('id' => 'post-category', 'empty' => '')); ?>
 			<?php echo $this->Form->end('Submit'); ?>
 		</div>
 	</div>

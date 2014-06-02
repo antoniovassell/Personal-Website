@@ -3,7 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * Post Model
  *
- * @property View $View
+ * @property PostView $PostView
  */
 class Post extends AppModel {
 
@@ -59,11 +59,24 @@ class Post extends AppModel {
 	public $hasMany = array(
 		'PostView' => array(
 			'className' => 'PostView',
-			'foreignKey' => 'post_id',
+			'foreignKey' => 'post_id'
 		),
 		'Comment' => array(
 			'className' => 'Comment',
 			'foreignKey' => 'post_id'
+		)
+	);
+
+/**
+ * BelongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'Category' => array(
+			'className' => 'Category',
+			'foreignKey' => 'category_id',
+			'counterCache' => true
 		)
 	);
 
@@ -90,5 +103,15 @@ class Post extends AppModel {
 	public function getPost($slug) {
 		$post = $this->find('first', array('conditions' => array('Post.slug' => $slug)));
 		return $post;
+	}
+
+/**
+ * Set items
+ *
+ * @return array
+ */
+	public function setItems() {
+		$categories = $this->Category->find('list');
+		return compact('categories');
 	}
 }
