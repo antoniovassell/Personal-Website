@@ -97,4 +97,8 @@ CakeLog::config('error', array(
 	'file' => 'error',
 ));
 
-CakePlugin::loadAll();
+CakePlugin::loadAll(array(
+	'AssetCompress' => array(
+		'bootstrap' => true
+	)
+));

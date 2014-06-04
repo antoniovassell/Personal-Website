@@ -11,11 +11,10 @@
 
 	<?php
 		echo $this->Html->css(array(
-				'/theme-assets/css/bootstrap',
-				'/theme-assets/css/style',
-				'/theme-assets/css/font-awesome.min'
-			)
-		);
+			'/theme-assets/css/bootstrap',
+			'/theme-assets/css/font-awesome.min',
+			'/theme-assets/css/style'
+		));
 	?>
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -46,18 +45,10 @@
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<?php
+		echo $this->AssetCompress->script('libs');
 		echo $this->Html->script(array(
-			'jquery.min',
-			'/theme-assets/js/bootstrap.min.js',
-			'/theme-assets/js/retina-1.1.0.js',
-			'/theme-assets/js/jquery.hoverdir.js',
-			'/theme-assets/js/jquery.hoverex.min.js',
-			'/theme-assets/js/jquery.prettyPhoto.js',
 			'/theme-assets/js/jquery.isotope.min.js',
-			'/theme-assets/js/custom.js',
 			'jquery-parallax/jquery.parallax-1.1.3',
-			'jquery-parallax/jquery.localscroll-1.2.7-min',
-			'jquery-parallax/scrollTo-1.4.2-min',
 			'jquery.vticker.min',
 			'app.js'
 		));
