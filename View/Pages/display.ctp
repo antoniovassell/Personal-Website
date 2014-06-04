@@ -8,11 +8,11 @@
 				<div id="ticker">
 					<ul>
 						<li><h1 class="name">I'M ANTONIO VASSELL</h1></li>
-						<li><h1 class=""><span class="glyphicon glyphicon-heart"></span> WEB DEVELOPMENT</h1></li>
-						<li><h1 class=""><span class="glyphicon glyphicon-heart"></span> MACHINE LEARNING</h1></li>
+						<li><h1 class="">I <span class="glyphicon glyphicon-heart"></span> WEB DEVELOPMENT</h1></li>
+						<li><h1 class="">I <span class="glyphicon glyphicon-heart"></span> MACHINE LEARNING</h1></li>
 					</ul>
 				</div>
-				<p class="after-name"><span class="span-text title-font">Web Designer &amp; Developer</span></p>
+				<p class="after-name"><span class="span-text title-font">Software &amp; Web Developer</span></p>
 			</div>
 			<div class="col-lg-8 col-lg-offset-2 himg">
 				<img src="/electroswing/theme-assets/img/browser.png" class="img-responsive">

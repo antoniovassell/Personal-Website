@@ -478,3 +478,39 @@ csmall2 {
 .sub-heading h1{
 	padding-left: 10px;
 }
+
+@media (max-width: 999px) {
+	#ticker h1 {
+		font-size: 4.0em;
+		text-align: center;
+		height: 1.5em;
+	}
+	.after-name {
+		font-size: 2.5em;
+	}
+}
+
+@media (max-width: 700px) {
+	#ticker h1 {
+		font-size: 2.5em;
+		text-align: center;
+		height: 1.5em;
+	}
+	.after-name {
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width: 490px) {
+	#ticker h1 {
+		font-size: 1.5em;
+		text-align: center;
+		height: 1.5em;
+	}
+	.after-name {
+		font-size: 1.0em;
+	}
+	#ticker {
+		height: 50px !important;
+	}
+}
