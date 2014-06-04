@@ -40,7 +40,7 @@
 					<p><?php echo $this->Html->link(__('[Edit]'), array('controller' => 'posts', 'action' => 'edit', $post['Post']['id'])); ?></p>
 					<p><?php echo $this->Html->link(__('[Delete]'), array('controller' => 'posts', 'action' => 'delete', $post['Post']['id'])); ?></p>
 				<?php endif; ?>
-				<div class="hline"></div>
+				<div class="rainbow"></div>
 				<div class="spacing"></div>
 			<?php endforeach; ?>
 		</div><! --/col-lg-8 -->
