@@ -85,3 +85,45 @@
 	$('#twrap').parallax("50%", -0.2, true);
 	$('#ticker').vTicker();
 })(jQuery);
+
+// Map
+function initialize() {
+	var map_canvas = document.getElementById('map_canvas');
+	var map_options = {
+		center: new google.maps.LatLng(18.0137463, -76.8096801),
+		zoom: 14,
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+		controls: {
+			panControl: false,
+			zoomControl: true,
+			mapTypeControl: false,
+			scaleControl: false,
+			streetViewControl: false,
+			overviewMapControl: false
+		},
+		scrollwheel: false
+	}
+	var map = new google.maps.Map(map_canvas, map_options)
+	map.set('styles', [
+		{
+			featureType: 'road',
+			elementType: 'geometry'
+		}, {
+			featureType: 'landscape',
+			elementType: 'geometry',
+			stylers: [
+				{ hue: '#ffff00' },
+				{ gamma: 1.4 },
+				{ saturation: 82 },
+				{ lightness: 96 }
+			]
+		}, {
+			featureType: 'poi',
+			elementType: 'geometry',
+			stylers: [
+				{ visibility: 'off' }
+			]
+		}
+	]);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
