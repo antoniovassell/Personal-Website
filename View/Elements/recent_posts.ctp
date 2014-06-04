@@ -1,5 +1,5 @@
 <h4>Recent Posts</h4>
-<div class="hline"></div>
+<div class="rainbow"></div>
 <ul class="popular-posts">
 	<li>
 		<a href="#"><img src="assets/img/thumb01.jpg" alt="Popular Post"></a>
