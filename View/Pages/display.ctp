@@ -94,7 +94,7 @@
 						I’m sorry, but I don’t want to be an emperor. That’s not my business. I don’t want to rule or conquer anyone. I should like to help everyone - if possible - Jew, Gentile - black man - white. We all want to help one another. Human beings are like that. We want to live by each other’s happiness - not by each other’s misery. We don’t want to hate and despise one another. In this world there is room for everyone. And the good earth is rich and can provide for everyone. The way of life can be free and beautiful, but we have lost the way...
 					</p>
 					<footer>
-						Charlie Chaplin <br/> in <br/>
+						Antonio Vassell <br/> in <br/>
 						<cite title="Source Title">
 							<?php
 							echo $this->Html->link(
