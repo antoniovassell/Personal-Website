@@ -305,11 +305,13 @@ a:focus {
 }
 
 #twrap p {
-	color: white;
-	font-size: 15px;
+	color: #fff;
+	font-size: 18px;
 	line-height: 30px;
 }
-
+#twrap footer {
+	color: #fff;
+}
 #twrap blockquote {
 	border-left: none;
 }
