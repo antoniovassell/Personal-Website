@@ -22,4 +22,27 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+
+/**
+ * Helpers
+ *
+ * @var array
+ */
+	public $helpers = array(
+		'Html' => array('className' => 'BootstrapHtml'),
+		'Form' => array('className' => 'BootstrapForm'),
+		'Paginator' => array('className' => 'BootstrapPaginator'),
+		'Session',
+		'AssetCompress.AssetCompress'
+	);
+
+/**
+ * Before Filter
+ *
+ * @return void
+ */
+	public function beforeFilter() {
+		$isAdmin = true;
+		$this->set(compact('isAdmin'));
+	}
 }

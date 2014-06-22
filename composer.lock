@@ -4,20 +4,139 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d6401edd3ad6893a91e824f1d268f630",
+    "hash": "6830cd921f56f82d77e19d1ef864d8a3",
     "packages": [
         {
-            "name": "cakephp/cakephp",
-            "version": "2.5.1",
+            "name": "cakedc/migrations",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/cakephp/cakephp.git",
-                "reference": "0fd12c7a684417026bd56ac6d1fc4047a563c96d"
+                "url": "https://github.com/CakeDC/migrations.git",
+                "reference": "46cdcac5639fecfbcdc888ebac5a831058a91ec2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/0fd12c7a684417026bd56ac6d1fc4047a563c96d",
-                "reference": "0fd12c7a684417026bd56ac6d1fc4047a563c96d",
+                "url": "https://api.github.com/repos/CakeDC/migrations/zipball/46cdcac5639fecfbcdc888ebac5a831058a91ec2",
+                "reference": "46cdcac5639fecfbcdc888ebac5a831058a91ec2",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.2.8"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cake Development Corporation",
+                    "email": "team@cakedc.com",
+                    "homepage": "http://cakedc.com"
+                }
+            ],
+            "description": "Migrations Plugin for CakePHP",
+            "homepage": "http://cakedc.com",
+            "keywords": [
+                "cakephp",
+                "migrations"
+            ],
+            "time": "2014-05-19 20:20:40"
+        },
+        {
+            "name": "cakedc/search",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CakeDC/search.git",
+                "reference": "31b86c1c9fd38a15c5cfb93b02081838da331f3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CakeDC/search/zipball/31b86c1c9fd38a15c5cfb93b02081838da331f3e",
+                "reference": "31b86c1c9fd38a15c5cfb93b02081838da331f3e",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "Search"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cake Development Corporation",
+                    "email": "team@cakedc.com",
+                    "homepage": "http://cakedc.com"
+                }
+            ],
+            "description": "Search Plugin for CakePHP",
+            "homepage": "http://github.com/CakeDC/search",
+            "keywords": [
+                "cakephp",
+                "filter",
+                "post-redirect-get",
+                "prg",
+                "search"
+            ],
+            "time": "2014-05-23 16:34:48"
+        },
+        {
+            "name": "cakedc/utils",
+            "version": "1.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CakeDC/utils.git",
+                "reference": "ea48ed95b62517ddb046a46c17638726242121da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CakeDC/utils/zipball/ea48ed95b62517ddb046a46c17638726242121da",
+                "reference": "ea48ed95b62517ddb046a46c17638726242121da",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cake Development Corporation",
+                    "email": "team@cakedc.com",
+                    "homepage": "http://cakedc.com"
+                }
+            ],
+            "description": "Utils Plugin for CakePHP",
+            "homepage": "http://cakedc.com",
+            "keywords": [
+                "cakephp",
+                "utility"
+            ],
+            "time": "2014-03-30 21:42:43"
+        },
+        {
+            "name": "cakephp/cakephp",
+            "version": "2.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cakephp/cakephp.git",
+                "reference": "96df2c4b683b105d64bfc78bbccb4184950034e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cakephp/cakephp/zipball/96df2c4b683b105d64bfc78bbccb4184950034e7",
+                "reference": "96df2c4b683b105d64bfc78bbccb4184950034e7",
                 "shasum": ""
             },
             "require": {
@@ -47,7 +166,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2014-05-18 02:39:27"
+            "time": "2014-06-15 01:36:39"
         },
         {
             "name": "cakephp/debug_kit",
@@ -100,24 +219,25 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.0.13",
+            "version": "v1.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "26d37e307f9aa6e2e81806a6525666f8ab5ba0ff"
+                "reference": "8281faa96186b18db9d53e8dbeb2d549c66d9cdc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/26d37e307f9aa6e2e81806a6525666f8ab5ba0ff",
-                "reference": "26d37e307f9aa6e2e81806a6525666f8ab5ba0ff",
+                "url": "https://api.github.com/repos/composer/installers/zipball/8281faa96186b18db9d53e8dbeb2d549c66d9cdc",
+                "reference": "8281faa96186b18db9d53e8dbeb2d549c66d9cdc",
                 "shasum": ""
             },
             "replace": {
+                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "4.1.*"
             },
             "type": "composer-installer",
             "extra": {
@@ -139,7 +259,7 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "http://dontkry.com",
+                    "homepage": "https://github.com/shama",
                     "role": "Developer"
                 }
             ],
@@ -147,12 +267,14 @@
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
                 "Craft",
+                "Dolibarr",
                 "Hurad",
                 "MODX Evo",
                 "OXID",
                 "WolfCMS",
                 "agl",
                 "annotatecms",
+                "bitrix",
                 "cakephp",
                 "codeigniter",
                 "concrete5",
@@ -169,9 +291,11 @@
                 "mako",
                 "mediawiki",
                 "modulework",
+                "moodle",
                 "phpbb",
                 "piwik",
                 "ppi",
+                "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
@@ -180,7 +304,49 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-04-09 16:12:43"
+            "time": "2014-06-18 15:29:19"
+        },
+        {
+            "name": "markstory/asset_compress",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/markstory/asset_compress.git",
+                "reference": "83c54199924576201e6843083db3a9842429f85f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/markstory/asset_compress/zipball/83c54199924576201e6843083db3a9842429f85f",
+                "reference": "83c54199924576201e6843083db3a9842429f85f",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "cakephp-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Story",
+                    "homepage": "http://mark-story.com",
+                    "role": "Author"
+                }
+            ],
+            "description": "An asset compression plugin for CakePHP. Provides file concatenation and a flexible filter system for preprocessing and minification.",
+            "homepage": "https://github.com/markstory/asset_compress",
+            "keywords": [
+                "assets",
+                "cakephp",
+                "coffee-script",
+                "less",
+                "minifier",
+                "sass"
+            ],
+            "time": "2014-06-15 01:54:48"
         }
     ],
     "packages-dev": [
@@ -190,9 +356,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "markstory/asset_compress": 20
+    },
     "platform": [
 
     ],

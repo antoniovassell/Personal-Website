@@ -1,52 +1,58 @@
-<?php
-/**
- *
- *
- * @link          http://cakephp.org CakePHP(tm) Project
- * @package       app.View.Layouts
- * @since         CakePHP(tm) v 0.10.0.1076
- */
-
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<?php echo $this->Html->charset(); ?>
-	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
-	</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" type="image/png" href="<?php echo $this->Html->url('/img/myicon.png'); ?>">
+	<title>Antonio Vassell</title>
+
 	<?php
-		echo $this->Html->meta('icon');
-
-		echo $this->Html->css('cake.generic');
-
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
+		echo $this->Html->css(array(
+			'/theme-assets/css/bootstrap',
+			'/theme-assets/css/font-awesome.min',
+			'/theme-assets/css/style'
+		));
 	?>
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<?php
+		echo $this->Html->script(array(
+			'/theme-assets/js/modernizr',
+			'html5shiv',
+			'respond'
+		));
+	?>
+	<![endif]-->
 </head>
+
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
-		</div>
-		<div id="content">
 
-			<?php echo $this->Session->flash(); ?>
-
-			<?php echo $this->fetch('content'); ?>
-		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
-		</div>
+	<!-- Fixed navbar -->
+	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<?php echo $this->element('header'); ?>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<div id="content-wrapper">
+		<?php echo $this->fetch('flash'); ?>
+		<?php echo $this->fetch('content'); ?>
+	</div>
+	<?php echo $this->element('footer'); ?>
+
+	<!-- Bootstrap core JavaScript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<?php
+		echo $this->AssetCompress->script('libs');
+		echo $this->Html->script(array(
+			'/theme-assets/js/jquery.isotope.min.js',
+			'jquery-parallax/jquery.parallax-1.1.3',
+			'jquery.vticker.min',
+			'app.js'
+		));
+	?>
+	<?php echo $this->fetch('script'); ?>
 </body>
 </html>
