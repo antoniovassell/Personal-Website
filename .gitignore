@@ -18,6 +18,8 @@
 /Plugin/Migrations
 /Plugin/AssetCompress
 /Plugin/Cms
+/Plugin/Utils
+/Plugin/Search
 /webroot/uploads
 
 # OS generated files #
