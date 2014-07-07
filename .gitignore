@@ -13,11 +13,13 @@
 /Vendor/autoload.php
 /Vendor/composer
 /.idea
-
+/Vendor/cakephp
 /Plugin/DebugKit
 /Plugin/Migrations
 /Plugin/AssetCompress
 /Plugin/Cms
+/Plugin/Utils
+/Plugin/Search
 /webroot/uploads
 
 # OS generated files #
