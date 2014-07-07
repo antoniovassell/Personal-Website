@@ -15,7 +15,7 @@
 				<p class="after-name"><span class="span-text title-font">Software &amp; Web Developer</span></p>
 			</div>
 			<div class="col-lg-8 col-lg-offset-2 himg">
-				<img src="/electroswing/theme-assets/img/browser.png" class="img-responsive">
+				<?php echo $this->Html->image('/theme-assets/img/browser.png', array('class' => 'img-responsive', 'alt' => 'Browser Image')); ?>
 			</div>
 		</div><!-- /row -->
 	</div> <!-- /container -->
