@@ -24,7 +24,8 @@ class Post extends AppModel {
  * @var array
  */
 	public $filterArgs = array(
-		'category_name' => array('type' => 'value', 'field' => 'Category.name')
+		'category_name' => array('type' => 'value', 'field' => 'Category.name'),
+		'title' => array('type' => 'like')
 	);
 
 /**
