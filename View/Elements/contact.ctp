@@ -49,7 +49,7 @@
 			<h2><?php echo __('Contact Details'); ?></h2>
 			<hr />
 			<address>
-				<strong>Vassell, Inc.</strong><br>
+				<strong>Antonio Vassell.</strong><br>
 				Kingston 5<br>
 				Jamaica<br>
 				<abbr title="Phone">T:</abbr> (876) 846-6974
@@ -57,4 +57,4 @@
 		</div>
 	</div>
 </div>
-<?php echo $this->Html->script('https://maps.googleapis.com/maps/api/js');
+<?php echo $this->Html->script('https://maps.googleapis.com/maps/api/js', array('inline' => false));
