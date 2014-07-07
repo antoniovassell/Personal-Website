@@ -8,6 +8,13 @@ App::uses('AppModel', 'Model');
 class Category extends AppModel {
 
 /**
+ * Behaviours
+ *
+ * @var array
+ */
+	public $actsAs = array('Containable');
+
+/**
  * Validation rules
  *
  * @var array

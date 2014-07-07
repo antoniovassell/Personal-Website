@@ -13,7 +13,8 @@
 		echo $this->Html->css(array(
 			'/theme-assets/css/bootstrap',
 			'/theme-assets/css/font-awesome.min',
-			'/theme-assets/css/style'
+			'/theme-assets/css/style',
+			'style'
 		));
 	?>
 
@@ -36,7 +37,7 @@
 		<?php echo $this->element('header'); ?>
 	</div>
 	<div id="content-wrapper">
-		<?php echo $this->fetch('flash'); ?>
+		<?php echo $this->Session->flash(); ?>
 		<?php echo $this->fetch('content'); ?>
 	</div>
 	<?php echo $this->element('footer'); ?>
