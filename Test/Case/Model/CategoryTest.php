@@ -47,11 +47,12 @@ class CategoryTest extends CakeTestCase {
 			'category_id' => 1,
 			'published' => true
 		);
-		$categories = $this->Category->getCategoriesWithTotalPost();
 		$this->Category->Post->save($post);
-		foreach ($categories as $category) {
-			$this->assertEquals($category['Category']['post_count'], count($category['Post']));
-		}
+		$categories = $this->Category->getCategoriesWithTotalPost();
+		$categoryId = $categories[0]['Category']['id'];
+		$postCount = $this->Category->Post->find('count', array('conditions' => array('category_id' => $categoryId)));
+
+		$this->assertEquals($categories[0]['Category']['post_count'], $postCount);
 	}
 
 /**

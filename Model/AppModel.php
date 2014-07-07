@@ -11,6 +11,7 @@
  */
 
 App::uses('Model', 'Model');
+App::uses('CakeEmail', 'Network/Email');
 
 /**
  * Application model for Cake.
@@ -28,4 +29,14 @@ class AppModel extends Model {
  * @var int
  */
 	public $recursive = -1;
+
+/**
+ * Get a Cake Instance
+ *
+ * @param string $config
+ * @return CakeEmail
+ */
+	public function getCakeInstance($config = 'default') {
+		return new CakeEmail($config);
+	}
 }
