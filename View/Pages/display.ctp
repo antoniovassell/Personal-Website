@@ -137,5 +137,4 @@
 </div><! --/cwrap -->
 <div class="rainbow"></div>
 <?php echo $this->element('contact'); ?>
-<br/>
 <div class="rainbow"></div>
