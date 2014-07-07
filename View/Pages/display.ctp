@@ -15,7 +15,7 @@
 				<p class="after-name"><span class="span-text title-font">Software &amp; Web Developer</span></p>
 			</div>
 			<div class="col-lg-8 col-lg-offset-2 himg">
-				<img src="/electroswing/theme-assets/img/browser.png" class="img-responsive">
+				<?php echo $this->Html->image('/theme-assets/img/browser.png', array('class' => 'img-responsive', 'alt' => 'Browser Image')); ?>
 			</div>
 		</div><!-- /row -->
 	</div> <!-- /container -->
@@ -78,7 +78,6 @@
 		<div class="col-lg-3">
 			<?php echo $this->element('Posts/latest_post_titles'); ?>
 		</div>
-
 	</div><! --/row -->
 </div><! --/container -->
 <!-- *****************************************************************************************************************
@@ -115,26 +114,6 @@
 <!-- *****************************************************************************************************************
  OUR CLIENTS
  ***************************************************************************************************************** -->
-<div class="rainbow"></div>
-<div id="cwrap">
-	<div class="container">
-		<div class="row centered">
-			<h3>OUR CLIENTS</h3>
-			<div class="col-lg-3 col-md-3 col-sm-3">
-				<img src="/electroswing/theme-assets/img/clients/client01.png" class="img-responsive">
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3">
-				<img src="/electroswing/theme-assets/img/clients/client02.png" class="img-responsive">
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3">
-				<img src="/electroswing/theme-assets/img/clients/client03.png" class="img-responsive">
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3">
-				<img src="/electroswing/theme-assets/img/clients/client04.png" class="img-responsive">
-			</div>
-		</div><! --/row -->
-	</div><! --/container -->
-</div><! --/cwrap -->
 <div class="rainbow"></div>
 <?php echo $this->element('contact'); ?>
 <div class="rainbow"></div>
