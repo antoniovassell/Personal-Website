@@ -15,10 +15,9 @@
 
 <div class="container mtb">
 	<div class="row">
-
 		<! -- BLOG POSTS LIST -->
 		<div class="col-lg-8">
-			<?php foreach ($recentPosts as $post): ?>
+			<?php foreach ($posts as $post): ?>
 				<?php if ($post['Post']['image']): ?>
 				<p>
 					<?php echo $this->Html->image($post['Post']['image'], array('class' => 'img-responsive')); ?>
