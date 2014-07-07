@@ -5,12 +5,4 @@ App::uses('AppController', 'Controller');
  *
  */
 class CommentsController extends AppController {
-
-/**
- * Scaffold
- *
- * @var mixed
- */
-	public $scaffold;
-
 }
