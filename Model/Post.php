@@ -13,7 +13,18 @@ class Post extends AppModel {
  * @var array
  */
 	public $actsAs = array(
-		'Utils.Sluggable'
+		'Utils.Sluggable',
+		'Search.Searchable',
+		'Containable'
+	);
+
+/**
+ * Filter Args
+ *
+ * @var array
+ */
+	public $filterArgs = array(
+		'category_name' => array('type' => 'value', 'field' => 'Category.name')
 	);
 
 /**
