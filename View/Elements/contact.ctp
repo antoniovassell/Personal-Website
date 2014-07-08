@@ -20,6 +20,7 @@
 				<?php echo $this->Form->input('subject'); ?>
 				<?php echo $this->Form->input('message'); ?>
 			<?php echo $this->Form->end('Submit'); ?>
+			<br/>
 		</div>
 		<div class="col-lg-4">
 			<h2><?php echo __('Social'); ?></h2>
