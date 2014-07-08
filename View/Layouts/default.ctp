@@ -47,13 +47,19 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
 <?php
-echo $this->AssetCompress->script('libs');
+// echo $this->AssetCompress->script('libs');
 echo $this->Html->script(array(
+	'jquery.min',
+	'/theme-assets/js/bootstrap.min.js',
+	'/theme-assets/js/retina-1.1.0.js',
+	'/theme-assets/js/jquery.hoverdir.js',
+	'/theme-assets/js/jquery.hoverex.min.js',
+	'/theme-assets/js/jquery.prettyPhoto.js',
 	'/theme-assets/js/jquery.isotope.min.js',
-	'jquery-parallax/jquery.parallax-1.1.3.js',
-	'jquery.vticker.min.js',
+	'/theme-assets/js/custom.js',
+	'jquery-parallax/jquery.parallax-1.1.3',
 	'/js-plugins/slitslider/js/jquery.ba-cond.min.js',
 	'/js-plugins/slitslider/js/jquery.slitslider.js',
 	'app.js'
@@ -62,8 +68,9 @@ echo $this->Html->script(array(
 <?php echo $this->fetch('script'); ?>
 
 <script type="text/javascript">
+	// Map
+	google.maps.event.addDomListener(window, 'load', initialize);
 	$(function() {
-
 		var Page = (function() {
 
 			var $navArrows = $( '#nav-arrows' ),
