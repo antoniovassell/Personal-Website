@@ -72,45 +72,6 @@
 		</div><!-- /slider-wrapper -->
 	</div>
 </div>
-<!-- *****************************************************************************************************************
- SERVICE LOGOS
- ***************************************************************************************************************** -->
-<div class="rainbow"></div>
-<div id="service">
-	<div class="container">
-		<div class="row centered">
-			<div class="col-md-4">
-				<i class="fa fa-heart-o"></i>
-				<h4>Handsomely Crafted</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-			</div>
-			<div class="col-md-4">
-				<i class="fa fa-flask"></i>
-				<h4>Retina Ready</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-			</div>
-			<div class="col-md-4">
-				<i class="fa fa-trophy"></i>
-				<h4>Quality Theme</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-			</div>
-		</div>
-	</div><! --/container -->
-</div><! --/service -->
-
-<!-- *****************************************************************************************************************
- PORTFOLIO SECTION
- ***************************************************************************************************************** -->
-<div class="rainbow"></div>
-<div id="portfoliowrap">
-	<h3><?php echo __('GALLERY'); ?></h3>
-	<?php echo $this->Html->image('home/test-run.PNG'); ?>
-	</div><!-- portfolio container -->
-</div><!--/Portfoliowrap -->
-
 
 <!-- *****************************************************************************************************************
  MIDDLE CONTENT
@@ -118,7 +79,7 @@
 <div class="container mtb">
 	<div class="row">
 		<div class="col-lg-4 col-lg-offset-1">
-			<h4>More About Our Agency.</h4>
+			<h4><?php echo __('More About My Blog'); ?></h4>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
 			<p><br/><a href="about.html" class="btn btn-theme">More Info</a></p>
 		</div>
