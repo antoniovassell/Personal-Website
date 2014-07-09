@@ -1,6 +1,6 @@
 <h4>Search</h4>
 <div class="rainbow"></div>
-<p>
-	<br/>
-	<input type="text" class="form-control" placeholder="Search something">
-</p>
+<br/>
+<?php echo $this->Form->create('Post', array('url' => array('controller' => 'posts', 'action' => 'index'))); ?>
+	<?php echo $this->Form->input('title', array('label' => false, 'placeholder' => 'Search title')); ?>
+<?php echo $this->Form->end('Search');

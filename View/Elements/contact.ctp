@@ -14,12 +14,13 @@
 		<div class="col-lg-4">
 			<h2><?php echo __('Message'); ?></h2>
 			<hr />
-			<?php echo $this->Form->create('Message'); ?>
-			<?php echo $this->Form->input('name'); ?>
-			<?php echo $this->Form->input('email_address'); ?>
-			<?php echo $this->Form->input('subject'); ?>
-			<?php echo $this->Form->input('message'); ?>
+			<?php echo $this->Form->create('Message', array('url' => array('controller' => 'messages', 'action' => 'send_message'))); ?>
+				<?php echo $this->Form->input('name'); ?>
+				<?php echo $this->Form->input('email_address'); ?>
+				<?php echo $this->Form->input('subject'); ?>
+				<?php echo $this->Form->input('message'); ?>
 			<?php echo $this->Form->end('Submit'); ?>
+			<br/>
 		</div>
 		<div class="col-lg-4">
 			<h2><?php echo __('Social'); ?></h2>
@@ -49,7 +50,7 @@
 			<h2><?php echo __('Contact Details'); ?></h2>
 			<hr />
 			<address>
-				<strong>Vassell, Inc.</strong><br>
+				<strong>Antonio Vassell.</strong><br>
 				Kingston 5<br>
 				Jamaica<br>
 				<abbr title="Phone">T:</abbr> (876) 846-6974
@@ -57,4 +58,4 @@
 		</div>
 	</div>
 </div>
-<?php echo $this->Html->script('https://maps.googleapis.com/maps/api/js');
+<?php echo $this->Html->script('https://maps.googleapis.com/maps/api/js', array('inline' => false));

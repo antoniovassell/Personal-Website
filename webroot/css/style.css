@@ -1,0 +1,9 @@
+#flashMessage {
+	position: fixed;
+	z-index: 999999;
+	width: 100%;
+	text-align: center;
+}
+#content-wrapper {
+	margin-top: 69px;
+}

@@ -16,13 +16,28 @@ class PostsController extends AppController {
 	public $name = 'Posts';
 
 /**
+ * Components
+ *
+ * @var array
+ */
+	public $components = array(
+		'Search.Prg',
+		'Paginator'
+	);
+
+/**
  * Index
  *
  * @return void
  */
 	public function index() {
-		$recentPosts = $this->Post->getRecentFull();
-		$this->set(compact('recentPosts'));
+		$this->Prg->commonProcess();
+		$this->Paginator->settings['conditions'] = $this->Post->parseCriteria($this->Prg->parsedParams());
+		$this->Paginator->settings['contain'] = array(
+			'Category'
+		);
+		$posts = $this->Paginator->paginate();
+		$this->set(compact('posts'));
 	}
 
 /**

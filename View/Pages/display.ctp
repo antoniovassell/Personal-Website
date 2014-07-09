@@ -1,65 +1,77 @@
-<!-- *****************************************************************************************************************
- HEADERWRAP
- ***************************************************************************************************************** -->
-<div id="headerwrap">
-	<div class="container">
-		<div class="row">
-			<div class="ticker-cont col-lg-12">
-				<div id="ticker">
-					<ul>
-						<li><h1 class="name">I'M ANTONIO VASSELL</h1></li>
-						<li><h1 class="">I <span class="glyphicon glyphicon-heart"></span> WEB DEVELOPMENT</h1></li>
-						<li><h1 class="">I <span class="glyphicon glyphicon-heart"></span> MACHINE LEARNING</h1></li>
-					</ul>
+<div id="home">
+	<div class="demo-1">
+		<div id="slider" class="sl-slider-wrapper">
+			<div class="sl-slider">
+				<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+					<div class="sl-slide-inner">
+						<div class="deco" data-icon="H"></div>
+						<h2>Antonio Vassell</h2>
+						<blockquote>
+							<p>
+								Something worth talking about will go here
+							</p>
+						</blockquote>
+					</div>
 				</div>
-				<p class="after-name"><span class="span-text title-font">Software &amp; Web Developer</span></p>
-			</div>
-			<div class="col-lg-8 col-lg-offset-2 himg">
-				<img src="/electroswing/theme-assets/img/browser.png" class="img-responsive">
-			</div>
-		</div><!-- /row -->
-	</div> <!-- /container -->
-</div><!-- /headerwrap -->
-
-<!-- *****************************************************************************************************************
- SERVICE LOGOS
- ***************************************************************************************************************** -->
-<div class="rainbow"></div>
-<div id="service">
-	<div class="container">
-		<div class="row centered">
-			<div class="col-md-4">
-				<i class="fa fa-heart-o"></i>
-				<h4>Handsomely Crafted</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-			</div>
-			<div class="col-md-4">
-				<i class="fa fa-flask"></i>
-				<h4>Retina Ready</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-			</div>
-			<div class="col-md-4">
-				<i class="fa fa-trophy"></i>
-				<h4>Quality Theme</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-				<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-			</div>
-		</div>
-	</div><! --/container -->
-</div><! --/service -->
-
-<!-- *****************************************************************************************************************
- PORTFOLIO SECTION
- ***************************************************************************************************************** -->
-<div class="rainbow"></div>
-<div id="portfoliowrap">
-	<h3><?php echo __('GALLERY'); ?></h3>
-	<?php echo $this->Html->image('home/test-run.PNG'); ?>
-	</div><!-- portfolio container -->
-</div><!--/Portfoliowrap -->
-
+				<div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+					<div class="sl-slide-inner">
+						<div class="deco" data-icon="q"></div>
+						<h2>Antonio Vassell</h2>
+						<blockquote>
+							<p>
+								Something worth talking about will go here
+							</p>
+						</blockquote>
+					</div>
+				</div>
+				<div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+					<div class="sl-slide-inner">
+						<div class="deco" data-icon="O"></div>
+						<h2>Antonio Vassell</h2>
+						<blockquote>
+							<p>
+								Something worth talking about will go here
+							</p>
+						</blockquote>
+					</div>
+				</div>
+				<div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+					<div class="sl-slide-inner">
+						<div class="deco" data-icon="I"></div>
+						<h2>Antonio Vassell</h2>
+						<blockquote>
+							<p>
+								Something worth talking about will go here
+							</p>
+						</blockquote>
+					</div>
+				</div>
+				<div class="sl-slide bg-5" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+					<div class="sl-slide-inner">
+						<div class="deco" data-icon="t"></div>
+						<h2>Antonio Vassell</h2>
+						<blockquote>
+							<p>
+								Something worth talking about will go here
+							</p>
+						</blockquote>
+					</div>
+				</div>
+			</div><!-- /sl-slider -->
+			<nav id="nav-arrows" class="nav-arrows">
+				<span class="nav-arrow-prev">Previous</span>
+				<span class="nav-arrow-next">Next</span>
+			</nav>
+			<nav id="nav-dots" class="nav-dots">
+				<span class="nav-dot-current"></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</nav>
+		</div><!-- /slider-wrapper -->
+	</div>
+</div>
 
 <!-- *****************************************************************************************************************
  MIDDLE CONTENT
@@ -67,7 +79,7 @@
 <div class="container mtb">
 	<div class="row">
 		<div class="col-lg-4 col-lg-offset-1">
-			<h4>More About Our Agency.</h4>
+			<h4><?php echo __('More About My Blog'); ?></h4>
 			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
 			<p><br/><a href="about.html" class="btn btn-theme">More Info</a></p>
 		</div>
@@ -78,7 +90,6 @@
 		<div class="col-lg-3">
 			<?php echo $this->element('Posts/latest_post_titles'); ?>
 		</div>
-
 	</div><! --/row -->
 </div><! --/container -->
 <!-- *****************************************************************************************************************
@@ -115,26 +126,6 @@
 <!-- *****************************************************************************************************************
  OUR CLIENTS
  ***************************************************************************************************************** -->
-<div class="rainbow"></div>
-<div id="cwrap">
-	<div class="container">
-		<div class="row centered">
-			<h3>OUR CLIENTS</h3>
-			<div class="col-lg-3 col-md-3 col-sm-3">
-				<img src="/electroswing/theme-assets/img/clients/client01.png" class="img-responsive">
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3">
-				<img src="/electroswing/theme-assets/img/clients/client02.png" class="img-responsive">
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3">
-				<img src="/electroswing/theme-assets/img/clients/client03.png" class="img-responsive">
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-3">
-				<img src="/electroswing/theme-assets/img/clients/client04.png" class="img-responsive">
-			</div>
-		</div><! --/row -->
-	</div><! --/container -->
-</div><! --/cwrap -->
 <div class="rainbow"></div>
 <?php echo $this->element('contact'); ?>
 <div class="rainbow"></div>
