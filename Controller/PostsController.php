@@ -34,8 +34,25 @@ class PostsController extends AppController {
 		$this->Prg->commonProcess();
 		$this->Paginator->settings['conditions'] = $this->Post->parseCriteria($this->Prg->parsedParams());
 		$this->Paginator->settings['contain'] = array(
-			'Category'
+			'Category',
+			'Tag'
 		);
+
+		if (isset($this->passedArgs['by'])) {
+			$this->Paginator->settings['joins'] = array(
+				array(
+					'table' => 'tagged',
+					'alias' => 'Tagged',
+					'conditions' => array('Post.id = Tagged.foreign_key')
+				),
+				array(
+					'table' => 'tags',
+					'alias' => 'Tag',
+					'conditions' => array('Tagged.tag_id = Tag.id')
+				)
+			);
+		}
+
 		$posts = $this->Paginator->paginate();
 		$this->set(compact('posts'));
 	}
@@ -48,7 +65,10 @@ class PostsController extends AppController {
 	public function add() {
 		if ($this->request->is('post')) {
 			if ($this->Post->save($this->request->data)) {
+				$this->Session->setFlash(__('Your post has been saved'), 'default', array('class' => 'alert alert-success'));
 				return $this->redirect('index');
+			} else {
+				$this->Session->setFlash(__('Your post has not been saved'), 'default', array('class' => 'alert alert-danger'));
 			}
 		}
 		$this->set($this->Post->setItems());
@@ -118,6 +138,17 @@ class PostsController extends AppController {
 	public function popular_post_list() {
 		if ($this->request->is('requested')) {
 			return $this->Post->getPopularPostsList();
+		}
+	}
+
+/**
+ * Get popular tags list
+ *
+ * @return array
+ */
+	public function popular_tags() {
+		if ($this->request->is('requested')) {
+			return $this->Post->getPopularTagsList();
 		}
 	}
 }

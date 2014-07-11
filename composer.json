@@ -12,7 +12,8 @@
 		"cakephp/debug_kit": "2.2.*",
 		"cakedc/migrations" : "2.3.0",
 		"cakedc/utils" : "1.*",
-		"cakedc/search" : "2.3.0"
+		"cakedc/search" : "2.3.0",
+		"cakedc/tags" : "*"
     },
     "config": {
         "vendor-dir": "Vendor/"

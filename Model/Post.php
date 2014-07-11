@@ -15,6 +15,7 @@ class Post extends AppModel {
 	public $actsAs = array(
 		'Utils.Sluggable',
 		'Search.Searchable',
+		'Tags.Taggable',
 		'Containable'
 	);
 
@@ -25,7 +26,8 @@ class Post extends AppModel {
  */
 	public $filterArgs = array(
 		'category_name' => array('type' => 'value', 'field' => 'Category.name'),
-		'title' => array('type' => 'like')
+		'title' => array('type' => 'like'),
+		'by' => array('type' => 'value', 'field' => 'Tag.keyname')
 	);
 
 /**
@@ -89,6 +91,20 @@ class Post extends AppModel {
 			'className' => 'Category',
 			'foreignKey' => 'category_id',
 			'counterCache' => true
+		)
+	);
+
+/**
+ *
+ */
+	public $hasAndBelongsToMany = array(
+		'Tag' => array(
+			'className' => 'Tags.Tag',
+			'joinTable' => 'tagged',
+			'foreignKey' => 'foreign_key',
+			'associationForeignKey' => 'tag_id',
+			'unique' => true,
+			'conditions' => array('Tagged.model' => 'Post')
 		)
 	);
 
@@ -179,5 +195,15 @@ class Post extends AppModel {
 			)
 		);
 		return $posts;
+	}
+
+/**
+ * Get popular tags list
+ *
+ * @param int $limit
+ * @return array
+ */
+	public function getPopularTagsList($limit = 10) {
+		return $this->Tagged->find('cloud', array('limit' => $limit));
 	}
 }
