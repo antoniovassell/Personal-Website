@@ -80,8 +80,11 @@
 	<div class="row">
 		<div class="col-lg-4 col-lg-offset-1">
 			<h4><?php echo __('More About My Blog'); ?></h4>
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-			<p><br/><a href="about.html" class="btn btn-theme">More Info</a></p>
+			<p>I blog mostly about code in generally, specifically CakePHP, and also show my interest of the field of Artificial Intelligence. More articles are there about global issues and saving humanity from its own destruction, my ultimate goal. Check out a few articles of your interest and let me know what you love or hate - do we agree or do we agree to disagree.</p>
+			<p>
+				<br/>
+				<?php echo $this->Html->link(__('Go To Blog'), array('controller' => 'posts'), array('class' => 'btn btn-theme')); ?>
+			</p>
 		</div>
 
 		<div class="col-lg-3">
