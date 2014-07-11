@@ -4,7 +4,9 @@
 			<div class="sl-slider">
 				<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 					<div class="sl-slide-inner">
-						<div class="deco" data-icon="H"></div>
+						<div class="deco">
+							<?php echo $this->Html->image('headmove.png', array('id' => 'headmove-central')); ?>
+						</div>
 						<h2>Antonio Vassell</h2>
 						<blockquote>
 							<p>
