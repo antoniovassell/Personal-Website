@@ -33,7 +33,8 @@ class AppController extends Controller {
 		'Form' => array('className' => 'BootstrapForm'),
 		'Paginator' => array('className' => 'BootstrapPaginator'),
 		'Session',
-		'AssetCompress.AssetCompress'
+		'AssetCompress.AssetCompress',
+		'Tags.TagCloud'
 	);
 
 /**

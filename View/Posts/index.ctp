@@ -35,6 +35,13 @@
 					<?php echo $post['Post']['preview']; ?>
 				</div>
 				<p><?php echo $this->Html->link(__('[Read More]'), array('controller' => 'posts', 'action' => 'view', $post['Post']['slug'])); ?></p>
+				<ul>
+				<?php
+				foreach ($post['Tag'] as $tag) {
+					echo $this->Html->tag('li', $tag['keyname']);
+				}
+				?>
+				</ul>
 				<?php if ($isAdmin): ?>
 					<p><?php echo $this->Html->link(__('[Edit]'), array('controller' => 'posts', 'action' => 'edit', $post['Post']['id'])); ?></p>
 					<p><?php echo $this->Html->link(__('[Delete]'), array('controller' => 'posts', 'action' => 'delete', $post['Post']['id'])); ?></p>
