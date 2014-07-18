@@ -131,7 +131,7 @@ class Post extends AppModel {
  * @return array 	List of recent post in full
  */
 	public function getPost($slug) {
-		$post = $this->find('first', array('conditions' => array('Post.slug' => $slug)));
+		$post = $this->find('first', array('conditions' => array('Post.slug' => $slug), 'contain' => array('Tag')));
 		return $post;
 	}
 

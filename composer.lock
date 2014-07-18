@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6830cd921f56f82d77e19d1ef864d8a3",
+    "hash": "150b575c8c97f8568c190c0d0e895a68",
     "packages": [
         {
             "name": "cakedc/migrations",
@@ -87,6 +87,48 @@
                 "search"
             ],
             "time": "2014-05-23 16:34:48"
+        },
+        {
+            "name": "cakedc/tags",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CakeDC/tags.git",
+                "reference": "f0f1f735fbec8dd925c5925a9a4f69a3d5f6e2f8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CakeDC/tags/zipball/f0f1f735fbec8dd925c5925a9a4f69a3d5f6e2f8",
+                "reference": "f0f1f735fbec8dd925c5925a9a4f69a3d5f6e2f8",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "Tags"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cake Development Corporation",
+                    "email": "team@cakedc.com",
+                    "homepage": "http://cakedc.com"
+                }
+            ],
+            "description": "Tags plugin for CakePHP.",
+            "homepage": "http://github.com/CakeDC/tags",
+            "keywords": [
+                "cakephp",
+                "plugin",
+                "tags"
+            ],
+            "time": "2014-06-04 21:24:10"
         },
         {
             "name": "cakedc/utils",
@@ -219,16 +261,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.0.14",
+            "version": "v1.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "8281faa96186b18db9d53e8dbeb2d549c66d9cdc"
+                "reference": "8e6a72a78f6cfd537fde3350720dfdc9ae3c5621"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/8281faa96186b18db9d53e8dbeb2d549c66d9cdc",
-                "reference": "8281faa96186b18db9d53e8dbeb2d549c66d9cdc",
+                "url": "https://api.github.com/repos/composer/installers/zipball/8e6a72a78f6cfd537fde3350720dfdc9ae3c5621",
+                "reference": "8e6a72a78f6cfd537fde3350720dfdc9ae3c5621",
                 "shasum": ""
             },
             "replace": {
@@ -304,7 +346,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-06-18 15:29:19"
+            "time": "2014-06-23 16:25:28"
         },
         {
             "name": "markstory/asset_compress",

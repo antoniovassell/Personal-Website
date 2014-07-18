@@ -35,6 +35,14 @@
 				<?php echo $post['Post']['preview']; ?>
 				<?php echo $post['Post']['content']; ?>
 			</div>
+			<span class="tags-label"><?php echo __('Tags'); ?> :</span>
+			<ul class="tagcloud">
+				<?php
+				foreach ($post['Tag'] as $tag) {
+					echo $this->Html->tag('li', $tag['keyname']);
+				}
+				?>
+			</ul>
 			<?php echo $this->element('share'); ?>
 
 		</div><! --/col-lg-8 -->
