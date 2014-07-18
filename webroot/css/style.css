@@ -42,10 +42,10 @@
 }
 .f-content {
 	text-align: center;
-	color: #fff !important;
+	color: #000 !important;
 	font-weight: bold;
 }
 #footerwrap {
-	background-image: url(/img/home/galaxy.jpg);
+	background: #fff;
 	background-attachment: fixed;
 }
