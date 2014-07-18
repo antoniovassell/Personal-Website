@@ -43,7 +43,7 @@ class AppController extends Controller {
  * @return void
  */
 	public function beforeFilter() {
-		$isAdmin = true;
+		$isAdmin = false;
 		$this->set(compact('isAdmin'));
 	}
 }

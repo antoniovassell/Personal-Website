@@ -15,10 +15,10 @@
 			<h2><?php echo __('Message'); ?></h2>
 			<hr />
 			<?php echo $this->Form->create('Message', array('url' => array('controller' => 'messages', 'action' => 'send_message'))); ?>
-				<?php echo $this->Form->input('name', array('placeholder' => 'Name', 'label' => false)); ?>
-				<?php echo $this->Form->input('email_address', array('placeholder' => 'Email Address', 'label' => false)); ?>
-				<?php echo $this->Form->input('subject', array('placeholder' => 'Subject', 'label' => false)); ?>
-				<?php echo $this->Form->input('message', array('placeholder' => 'Message', 'label' => false)); ?>
+			<?php echo $this->Form->input('name', array('placeholder' => 'Name', 'label' => false)); ?>
+			<?php echo $this->Form->input('email_address', array('placeholder' => 'Email Address', 'label' => false)); ?>
+			<?php echo $this->Form->input('subject', array('placeholder' => 'Subject', 'label' => false)); ?>
+			<?php echo $this->Form->input('message', array('placeholder' => 'Message', 'label' => false)); ?>
 			<?php echo $this->Form->end('Submit'); ?>
 			<br/>
 		</div>

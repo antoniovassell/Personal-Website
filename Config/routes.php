@@ -23,6 +23,11 @@
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 /**
+ * My special routes here
+ */
+	Router::connect('/contact', array('controller' => 'messages', 'action' => 'contact'));
+
+/**
  * Load all plugin routes. See the CakePlugin documentation on
  * how to customize the loading of plugin routes.
  */

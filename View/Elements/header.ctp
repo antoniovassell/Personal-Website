@@ -17,6 +17,9 @@
 				<?php echo $this->Html->link(__('BLOG'), array('controller' => 'posts', 'action' => 'index')); ?>
 			</li>
 			<li>
+				<?php echo $this->Html->link(__('CONTACT'), array('controller' => 'messages', 'action' => 'contact')); ?>
+			</li>
+			<li>
 				<a href="https://github.com/antoniovassell" target="_blank"><i class="fa fa-github"></i></a>
 			</li>
 			<li>
