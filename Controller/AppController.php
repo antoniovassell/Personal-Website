@@ -38,6 +38,14 @@ class AppController extends Controller {
 	);
 
 /**
+ * Components
+ * @var array
+ */
+	public $components = array(
+		'Session'
+	);
+
+/**
  * Before Filter
  *
  * @return void

@@ -58,4 +58,10 @@
 		</div>
 	</div>
 </div>
-<?php echo $this->Html->script('https://maps.googleapis.com/maps/api/js', array('inline' => false));
+<?php
+echo $this->Html->script('https://maps.googleapis.com/maps/api/js', array('inline' => false));
+$this->Html->scriptBlock(
+	"google.maps.event.addDomListener(window, 'load', initialize);",
+	array('inline' => false)
+);
+?>

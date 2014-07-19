@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "150b575c8c97f8568c190c0d0e895a68",
+    "hash": "9a7a391e2f5654627746df47bddcc15e",
     "packages": [
         {
             "name": "cakedc/migrations",
@@ -129,6 +129,52 @@
                 "tags"
             ],
             "time": "2014-06-04 21:24:10"
+        },
+        {
+            "name": "cakedc/users",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CakeDC/users.git",
+                "reference": "96ce88b993ae009d2cfda4e175cc8da6e57a2f85"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CakeDC/users/zipball/96ce88b993ae009d2cfda4e175cc8da6e57a2f85",
+                "reference": "96ce88b993ae009d2cfda4e175cc8da6e57a2f85",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.2.8"
+            },
+            "suggest": {
+                "cakedc/search": "Search functionality for the admin.",
+                "cakedc/utils": "If you want to generate slugs based on the username."
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "Users"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cake Development Corporation",
+                    "email": "team@cakedc.com",
+                    "homepage": "http://cakedc.com"
+                }
+            ],
+            "description": "Users Plugin for CakePHP",
+            "homepage": "http://cakedc.com",
+            "keywords": [
+                "Users",
+                "auth",
+                "cakephp"
+            ],
+            "time": "2014-07-08 00:19:19"
         },
         {
             "name": "cakedc/utils",
