@@ -13,7 +13,8 @@
 		"cakedc/migrations" : "2.3.0",
 		"cakedc/utils" : "1.*",
 		"cakedc/search" : "2.3.0",
-		"cakedc/tags" : "*"
+		"cakedc/tags" : "*",
+		"cakedc/users" : "*"
     },
     "config": {
         "vendor-dir": "Vendor/"

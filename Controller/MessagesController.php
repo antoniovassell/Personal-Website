@@ -30,4 +30,12 @@ class MessagesController extends AppController {
 		}
 		return $this->redirect($this->referer());
 	}
+
+/**
+ * Contact View
+ *
+ * @return void
+ */
+	public function contact() {
+	}
 }

@@ -20,6 +20,15 @@ class Post extends AppModel {
 	);
 
 /**
+ * Helpers
+ *
+ * @var array
+ */
+	public $helpers = array(
+		'Gravatar'
+	);
+
+/**
  * Filter Args
  *
  * @var array
@@ -131,7 +140,20 @@ class Post extends AppModel {
  * @return array 	List of recent post in full
  */
 	public function getPost($slug) {
-		$post = $this->find('first', array('conditions' => array('Post.slug' => $slug)));
+		$post = $this->find(
+			'first',
+			array(
+				'conditions' => array(
+					'Post.slug' => $slug
+				),
+				'contain' => array(
+					'Tag',
+					'Comment' => array(
+						'order' => 'Comment.date ASC'
+					)
+				)
+			)
+		);
 		return $post;
 	}
 

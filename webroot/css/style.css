@@ -21,3 +21,35 @@
 	box-shadow: inset 0 0 0 10px #f7f7f7;
 	border-radius: 50%;
 }
+.tagcloud li {
+	list-style-type: none;
+	display: inline;
+	padding: 5px;
+	text-transform: capitalize;
+	background: #f7f7f7;
+	margin: 0 5px;
+}
+.tags-label {
+	float: left;
+}
+.rainbow {
+	padding: 1px;
+	background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #E75239), color-stop(12.5%, #E75239), color-stop(12.5%, #FF961C), color-stop(25%, #FF961C), color-stop(25%, #FFCC27), color-stop(37.5%, #FFCC27), color-stop(37.5%, #FCE62F), color-stop(50%, #FCE62F), color-stop(50%, #CDE35B), color-stop(62.5%, #CDE35B), color-stop(62.5%, #82CC33), color-stop(75%, #82CC33), color-stop(75%, #41BECE), color-stop(87.5%, #41BECE), color-stop(87.5%, #049CDB), color-stop(100%, #049CDB));
+	/* background-image: -webkit-linear-gradient(left, #E75239 0%,#E75239 12.5%,#FF961C 12.5%,#FF961C 25%,#FFCC27 25%,#FFCC27 37.5%,#FCE62F 37.5%,#FCE62F 50%,#CDE35B 50%,#CDE35B 62.5%,#82CC33 62.5%,#82CC33 75%,#41BECE 75%,#41BECE 87.5%,#049CDB 87.5%,#049CDB 100%); */
+	background-image: -moz-linear-gradient(left, #E75239 0%,#E75239 12.5%,#FF961C 12.5%,#FF961C 25%,#FFCC27 25%,#FFCC27 37.5%,#FCE62F 37.5%,#FCE62F 50%,#CDE35B 50%,#CDE35B 62.5%,#82CC33 62.5%,#82CC33 75%,#41BECE 75%,#41BECE 87.5%,#049CDB 87.5%,#049CDB 100%);
+	background-image: -o-linear-gradient(left, #E75239 0%,#E75239 12.5%,#FF961C 12.5%,#FF961C 25%,#FFCC27 25%,#FFCC27 37.5%,#FCE62F 37.5%,#FCE62F 50%,#CDE35B 50%,#CDE35B 62.5%,#82CC33 62.5%,#82CC33 75%,#41BECE 75%,#41BECE 87.5%,#049CDB 87.5%,#049CDB 100%);
+	background-image: linear-gradient(left, #E75239 0%,#E75239 12.5%,#FF961C 12.5%,#FF961C 25%,#FFCC27 25%,#FFCC27 37.5%,#FCE62F 37.5%,#FCE62F 50%,#CDE35B 50%,#CDE35B 62.5%,#82CC33 62.5%,#82CC33 75%,#41BECE 75%,#41BECE 87.5%,#049CDB 87.5%,#049CDB 100%);
+}
+.f-content {
+	text-align: center;
+	color: #000 !important;
+	font-weight: bold;
+}
+#footerwrap {
+	background: #fff;
+	background-attachment: fixed;
+}
+.my-icon {
+	width: 15px;
+	margin-top: -3px;
+}

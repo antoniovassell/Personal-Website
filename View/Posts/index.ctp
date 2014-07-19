@@ -35,7 +35,9 @@
 					<?php echo $post['Post']['preview']; ?>
 				</div>
 				<p><?php echo $this->Html->link(__('[Read More]'), array('controller' => 'posts', 'action' => 'view', $post['Post']['slug'])); ?></p>
-				<ul>
+				<br/>
+				<span class="tags-label"><?php echo __('Tags'); ?> :</span>
+				<ul class="tagcloud">
 				<?php
 				foreach ($post['Tag'] as $tag) {
 					echo $this->Html->tag('li', $tag['keyname']);

@@ -6,7 +6,9 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="<?php echo $this->Html->url('/'); ?>">ANTUAN.</a>
+		<a class="navbar-brand" href="<?php echo $this->Html->url('/'); ?>">
+			ANTUAN. <?php echo $this->Html->image('myicon.png', array('class' => 'my-icon')); ?>
+		</a>
 	</div>
 	<div class="navbar-collapse collapse navbar-right">
 		<ul class="nav navbar-nav">
@@ -15,6 +17,9 @@
 			</li>
 			<li>
 				<?php echo $this->Html->link(__('BLOG'), array('controller' => 'posts', 'action' => 'index')); ?>
+			</li>
+			<li>
+				<?php echo $this->Html->link(__('CONTACT'), array('controller' => 'messages', 'action' => 'contact')); ?>
 			</li>
 			<li>
 				<a href="https://github.com/antoniovassell" target="_blank"><i class="fa fa-github"></i></a>
