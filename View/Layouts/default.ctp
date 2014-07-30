@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="">
-	<meta name="author" content="">
+	<meta name="Antonio Vassell" content="">
 	<link rel="icon" type="image/png" href="<?php echo $this->Html->url('/img/myicon.png'); ?>">
 	<title>Antonio Vassell</title>
 
@@ -40,7 +40,7 @@
 <body>
 
 <!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+<div class="navbar navbar-default" role="navigation">
 	<?php echo $this->element('header'); ?>
 </div>
 <div id="content-wrapper">
