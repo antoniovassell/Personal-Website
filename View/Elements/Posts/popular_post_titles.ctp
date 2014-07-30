@@ -1,6 +1,6 @@
 <?php $posts = $this->requestAction(array('controller' => 'posts', 'action' => 'popular_post_list')); ?>
-	<h4><?php echo __('Popular Posts'); ?></h4>
-	<div class="hline"></div>
+	<h3><?php echo __('Popular Posts'); ?></h3>
+	<div class="rainbow"></div>
 <?php foreach ($posts as $post): ?>
 	<p>
 		<i class="fa fa-file-text"></i>

@@ -1,47 +1,63 @@
-<div id="home">
-	<div class="demo-1">
-		<div id="slider" class="sl-slider-wrapper">
-			<div class="sl-slider">
-				<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-					<div class="sl-slide-inner">
-						<div class="deco">
-							<?php echo $this->Html->image('headmove.png', array('id' => 'headmove-central')); ?>
+<div id="homepage-wrapper">
+	<div id="bg-black">
+		<div id="home-header-wrapper">
+			<div id="home-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="hc-wrapper"><?php echo $this->Html->image('headmove.png', array('id' => 'headmove-central')); ?></div>
 						</div>
-						<h2>Antonio Vassell</h2>
-						<blockquote>
-							<p>
-								<?php echo __('A Web Developer, who likes Artificial Intelligence and Machine Learning'); ?>
-							</p>
-						</blockquote>
+					</div>
+					<div class="row">
+						<div class="col-md-12 showoff-text">
+							<h1 class="text-center">Antonio Vassell</h1>
+							<h3 class="text-center">Web Developer who loves CakePHP and Machine Learning</h3>
+						</div>
 					</div>
 				</div>
-			</div><!-- /sl-slider -->
-			<nav id="nav-dots" class="nav-dots">
-				<span class="nav-dot-current"></span>
-			</nav>
-		</div><!-- /slider-wrapper -->
+			</div>
+		</div>
+	</div>
+
+	<div class="rainbow"></div>
+	<div class="about-me-section section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="text-center"><?php echo __('About Me'); ?></h1>
+					<p class="text-center">I am an aspiring web developer with 3 years experience. My skills sets currently revolves around CakePHP, one of the most popular PHP MVC frameworks around, built for Rapid Application Development.</p>
+					<p class="text-center">I am also interested in Artificial Intelligence and Medical Science. </p>
+					<p class="text-center">My objective is to attain international recognition for designing novel solutions for global business operations and maintain a standard revolution.</p>
+					<p class="text-center">I Currently employed at CakeDC as a CakePHP developer. If you have an idea that you are passionate about, lets talk.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="rainbow"></div>
+	<div class="blog-preview section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="text-center"><?php echo __('Blog'); ?></h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-1">
+					<h3><?php echo __('More About My Blog'); ?></h3>
+					<div class="rainbow"></div>
+					<p>I blog mostly about code in generally, specifically <b>CakePHP</b>, and <b>Artificial Intelligence</b>. <b>Global Issues</b> such as <b>Conflicts</b> and <b>Poverty</b> are some things I can't stand, you will here about those as well. </p>
+					<p>
+						<br/>
+						<?php echo $this->Html->link(__('Go To Blog'), array('controller' => 'posts'), array('class' => 'btn btn-theme')); ?>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<?php echo $this->element('Posts/popular_post_titles'); ?>
+				</div>
+				<div class="col-lg-3">
+					<?php echo $this->element('Posts/latest_post_titles'); ?>
+				</div>
+			</div><! --/row -->
+		</div><! --/container -->
 	</div>
 </div>
-<div class="rainbow"></div>
-<!-- *****************************************************************************************************************
- MIDDLE CONTENT
- ***************************************************************************************************************** -->
-<div class="container mtb">
-	<div class="row">
-		<div class="col-lg-4 col-lg-offset-1">
-			<h4><?php echo __('More About My Blog'); ?></h4>
-			<p>I blog mostly about code in generally, specifically CakePHP, and also show my interest of the field of Artificial Intelligence. More articles are there about global issues and saving humanity from its own destruction, my ultimate goal. Check out a few articles of your interest and let me know what you love or hate - do we agree or do we agree to disagree.</p>
-			<p>
-				<br/>
-				<?php echo $this->Html->link(__('Go To Blog'), array('controller' => 'posts'), array('class' => 'btn btn-theme')); ?>
-			</p>
-		</div>
-
-		<div class="col-lg-3">
-			<?php echo $this->element('Posts/popular_post_titles'); ?>
-		</div>
-		<div class="col-lg-3">
-			<?php echo $this->element('Posts/latest_post_titles'); ?>
-		</div>
-	</div><! --/row -->
-</div><! --/container -->

@@ -4,17 +4,21 @@
 
 <div class="p-comments">
 	<?php foreach ($comments as $comment): ?>
-	<div class="media">
-		<a class="pull-left" href="#">
-			<?php
-			$imageUrl = $this->Gravatar->getGravatar($comment['email_address']);
-			echo $this->Html->image($imageUrl, array('class' => 'media-object', 'alt' => 'User image'));
-			?>
-		</a>
-		<div class="media-body">
-			<h4 class="media-heading"><?php echo $comment['name']; ?></h4>
-			<span><?php echo $this->Time->timeAgoInWords($comment['date']); ?></span>
-			<div class="comment-body"><?php echo $comment['comment']; ?></div>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div class="media">
+				<a class="pull-left" href="#">
+					<?php
+					$imageUrl = $this->Gravatar->getGravatar($comment['email_address']);
+					echo $this->Html->image($imageUrl, array('class' => 'media-object', 'alt' => 'User image'));
+					?>
+				</a>
+				<div class="media-body">
+					<h4 class="media-heading"><?php echo $comment['name']; ?></h4>
+					<span><?php echo $this->Time->timeAgoInWords($comment['date']); ?></span>
+					<div class="comment-body"><?php echo $comment['comment']; ?></div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<?php endforeach;?>
