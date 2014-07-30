@@ -16,7 +16,7 @@
 <div class="container mtb">
 	<div class="row">
 		<! -- BLOG POSTS LIST -->
-		<div class="col-lg-8">
+		<div class="col-lg-12">
 			<?php foreach ($posts as $post): ?>
 				<?php if ($post['Post']['image']): ?>
 				<p>
@@ -28,14 +28,16 @@
 					'action' => 'view',
 					$post['Post']['slug']
 				)); ?>">
-					<?php echo $this->Html->tag('h3', $post['Post']['title'], array('class' => 'ctittle')); ?>
+					<?php echo $this->Html->tag('h2', $post['Post']['title'], array('class' => 'ctittle')); ?>
 				</a>
 				<p><csmall><?php echo $post['Post']['date_published']; ?></csmall></p>
 				<div>
 					<?php echo $post['Post']['preview']; ?>
 				</div>
 				<p><?php echo $this->Html->link(__('[Read More]'), array('controller' => 'posts', 'action' => 'view', $post['Post']['slug'])); ?></p>
-				<ul>
+				<br/>
+				<span class="tags-label"><?php echo __('Tags'); ?> :</span>
+				<ul class="tagcloud">
 				<?php
 				foreach ($post['Tag'] as $tag) {
 					echo $this->Html->tag('li', $tag['keyname']);
@@ -49,10 +51,6 @@
 				<div class="rainbow"></div>
 				<div class="spacing"></div>
 			<?php endforeach; ?>
-		</div><! --/col-lg-8 -->
-		<! -- SIDEBAR -->
-		<div class="col-lg-4">
-			<?php echo $this->element('sidebar'); ?>
 		</div>
 	</div><! --/row -->
 </div><! --/container -->

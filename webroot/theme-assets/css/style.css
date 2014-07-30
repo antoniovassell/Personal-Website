@@ -8,39 +8,36 @@
 	URL: http://alvarez.is
 ################################################################# */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:100,300);
 @import url("prettyPhoto.css") screen;
 @import url("hoverex-all.css") screen;
 
 /*	################################################################
 	1. GENERAL STRUCTURES
 ################################################################# */
-	* {
-		margin: 0;
-		padding: 0;
-	}
+* {
+	margin: 0;
+	padding: 0;
+}
 body {
 	background: #ffffff;
 	margin: 0;
 	height: 100%;
-	color: #384452;
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
+	color: #000;
+	font-family: 'Josefin Slab', sans-serif;
+	font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
+	font-family: 'Josefin Slab', sans-serif;
+	font-weight: 300;
 }
 
 p {
-	padding: 0;
-	margin-bottom: 12px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
-	color: #384452;
-	margin-top: 10px;
+	font-family: 'Josefin Slab', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 22px;
+	line-height: 30px;
 }
 
 img {
@@ -89,7 +86,7 @@ a:focus {
 }
 
 .navbar-brand {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Josefin Slab', sans-serif;
 	font-weight: 900;
 }
 
@@ -331,8 +328,8 @@ a:focus {
 
 /* Footer */
 #footerwrap {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 30px;
+	padding-bottom: 30px;
 	background: #384452;
 }
 
@@ -373,9 +370,12 @@ a:focus {
 }
 
 .ctitle {
-	color: #00b3fe;
-	font-weight: 700;
+	font-size: 60px;
 	margin-bottom: 15px;
+	text-align: center;
+}
+.ctitle > a {
+	color: #9D141E;
 }
 
 .csmall {
@@ -432,7 +432,7 @@ a:focus {
 	margin-right: 20px;
 }
 .popular-posts li em {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Josefin Slab', sans-serif;
 	font-size: 12px;
 	color: #b3b3b3
 }
@@ -449,63 +449,12 @@ a:focus {
 .ticker-cont {
 
 }
-#ticker ul {
-	width: 100%;
-}
-#ticker h1 {
-	font-size: 5.1em;
-	text-align: center;
-	height: 1.5em;
-}
-.after-name {
-	font-size: 4.5em;
-	height: 56px;
-	line-height: 56px;
-	letter-spacing: 0.24242424242424243px;
-	color: #fff;
-}
 
 .sub-heading {
 	padding-top: 70px;
 }
 .sub-heading h1{
 	padding-left: 10px;
-}
-
-@media (max-width: 999px) {
-	#ticker h1 {
-		font-size: 4.0em;
-		text-align: center;
-		height: 1.5em;
-	}
-	.after-name {
-		font-size: 2.5em;
-	}
-}
-
-@media (max-width: 700px) {
-	#ticker h1 {
-		font-size: 2.5em;
-		text-align: center;
-		height: 1.5em;
-	}
-	.after-name {
-		font-size: 1.5em;
-	}
-}
-
-@media (max-width: 490px) {
-	#ticker h1 {
-		font-size: 1.5em;
-		text-align: center;
-		height: 1.5em;
-	}
-	.after-name {
-		font-size: 1.0em;
-	}
-	#ticker {
-		height: 50px !important;
-	}
 }
 #contact-map-wrap {
 	position: relative;
@@ -534,13 +483,4 @@ a:focus {
 }
 #get-social li {
 	padding-bottom: 20px;
-}
-
-.rainbow {
-	padding: 3px;
-	background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #E75239), color-stop(12.5%, #E75239), color-stop(12.5%, #FF961C), color-stop(25%, #FF961C), color-stop(25%, #FFCC27), color-stop(37.5%, #FFCC27), color-stop(37.5%, #FCE62F), color-stop(50%, #FCE62F), color-stop(50%, #CDE35B), color-stop(62.5%, #CDE35B), color-stop(62.5%, #82CC33), color-stop(75%, #82CC33), color-stop(75%, #41BECE), color-stop(87.5%, #41BECE), color-stop(87.5%, #049CDB), color-stop(100%, #049CDB));
-	/* background-image: -webkit-linear-gradient(left, #E75239 0%,#E75239 12.5%,#FF961C 12.5%,#FF961C 25%,#FFCC27 25%,#FFCC27 37.5%,#FCE62F 37.5%,#FCE62F 50%,#CDE35B 50%,#CDE35B 62.5%,#82CC33 62.5%,#82CC33 75%,#41BECE 75%,#41BECE 87.5%,#049CDB 87.5%,#049CDB 100%); */
-	background-image: -moz-linear-gradient(left, #E75239 0%,#E75239 12.5%,#FF961C 12.5%,#FF961C 25%,#FFCC27 25%,#FFCC27 37.5%,#FCE62F 37.5%,#FCE62F 50%,#CDE35B 50%,#CDE35B 62.5%,#82CC33 62.5%,#82CC33 75%,#41BECE 75%,#41BECE 87.5%,#049CDB 87.5%,#049CDB 100%);
-	background-image: -o-linear-gradient(left, #E75239 0%,#E75239 12.5%,#FF961C 12.5%,#FF961C 25%,#FFCC27 25%,#FFCC27 37.5%,#FCE62F 37.5%,#FCE62F 50%,#CDE35B 50%,#CDE35B 62.5%,#82CC33 62.5%,#82CC33 75%,#41BECE 75%,#41BECE 87.5%,#049CDB 87.5%,#049CDB 100%);
-	background-image: linear-gradient(left, #E75239 0%,#E75239 12.5%,#FF961C 12.5%,#FF961C 25%,#FFCC27 25%,#FFCC27 37.5%,#FCE62F 37.5%,#FCE62F 50%,#CDE35B 50%,#CDE35B 62.5%,#82CC33 62.5%,#82CC33 75%,#41BECE 75%,#41BECE 87.5%,#049CDB 87.5%,#049CDB 100%);
 }

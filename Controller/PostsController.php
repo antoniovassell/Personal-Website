@@ -26,6 +26,15 @@ class PostsController extends AppController {
 	);
 
 /**
+ * Helpers
+ *
+ * @var array
+ */
+	public $helpers = array(
+		'Time'
+	);
+
+/**
  * Index
  *
  * @return void

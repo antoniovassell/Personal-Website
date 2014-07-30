@@ -46,4 +46,23 @@ class Comment extends AppModel {
 			'counterCache' => true
 		)
 	);
+
+/**
+ * Add new comment
+ *
+ * @param $postData
+ * @return array
+ */
+	public function add($postData) {
+		$result = array('success' => false, 'message' => 'What the hell?');
+		$postData['Comment']['date'] = date('Y-m-d H:i:s');
+		$this->set($postData);
+		$this->create($postData);
+		if ($this->validates()) {
+			if ($this->save($this->data)) {
+				$result['success'] = true;
+			}
+		}
+		return $result;
+	}
 }

@@ -38,12 +38,20 @@ class AppController extends Controller {
 	);
 
 /**
+ * Components
+ * @var array
+ */
+	public $components = array(
+		'Session'
+	);
+
+/**
  * Before Filter
  *
  * @return void
  */
 	public function beforeFilter() {
-		$isAdmin = true;
+		$isAdmin = false;
 		$this->set(compact('isAdmin'));
 	}
 }
