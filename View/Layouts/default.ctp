@@ -31,7 +31,7 @@
 	?>
 	<![endif]-->
 	<?php
-		if (Configure::read('debug') == 0) {
+		if (Configure::read('debug') === 0) {
 			echo $this->element('google_analytics');
 		}
 	?>

@@ -78,10 +78,10 @@
 	background-repeat: no-repeat;
 }
 #home-header {
-	background-image: url('/img/stormcode.PNG');
+	background-image: url('/img/stormcode.png');
 }
 #home-header-wrapper {
-	background-image: url('/img/stormcode_flip.PNG');
+	background-image: url('/img/stormcode_flip.png');
 	background-position: 100% 0%;
 }
 .hc-wrapper {
