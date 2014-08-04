@@ -42,7 +42,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4 col-lg-offset-1">
+				<div class="col-md-4">
 					<h3><?php echo __('More About My Blog'); ?></h3>
 					<div class="rainbow"></div>
 					<p>I blog mostly about code in generally, specifically <b>CakePHP</b>, and <b>Artificial Intelligence</b>. <b>Global Issues</b> such as <b>Conflicts</b> and <b>Poverty</b> are some things I can't stand, you will here about those as well. </p>
@@ -51,10 +51,10 @@
 						<?php echo $this->Html->link(__('Go To Blog'), array('controller' => 'posts'), array('class' => 'btn btn-theme')); ?>
 					</p>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-md-4">
 					<?php echo $this->element('Posts/popular_post_titles'); ?>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-md-4">
 					<?php echo $this->element('Posts/latest_post_titles'); ?>
 				</div>
 			</div><! --/row -->
