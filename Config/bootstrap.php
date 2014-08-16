@@ -100,5 +100,14 @@ CakeLog::config('error', array(
 CakePlugin::loadAll(array(
 	'AssetCompress' => array(
 		'bootstrap' => true
+	),
+	'Users' => array(
+		'routes' => true
 	)
 ));
+
+Configure::write('App.defaultEmail', 'antoniovassell@gmail.com');
+Configure::write('Users.roles', array('admin' => 'Admin'));
+Configure::write('Users.defaultRole', 'admin');
+Configure::write('Users.allowRegistration', false);
+Configure::write('Users.disableDefaultAuth');

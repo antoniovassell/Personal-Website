@@ -42,7 +42,16 @@ class AppController extends Controller {
  * @var array
  */
 	public $components = array(
-		'Session'
+		'Session',
+		'Auth' => array(
+			'loginAction' => array(
+				'plugin' => 'users',
+				'prefix' => null,
+				'admin' => false,
+				'controller' => 'users',
+				'action' => 'login'
+			)
+		)
 	);
 
 /**
@@ -51,6 +60,7 @@ class AppController extends Controller {
  * @return void
  */
 	public function beforeFilter() {
+		$this->Auth->allow();
 		$isAdmin = false;
 		$this->set(compact('isAdmin'));
 	}

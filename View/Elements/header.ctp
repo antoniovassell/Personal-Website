@@ -16,10 +16,10 @@
 				<?php echo $this->Html->link(__('HOME'), '/'); ?>
 			</li>
 			<li>
-				<?php echo $this->Html->link(__('BLOG'), array('controller' => 'posts', 'action' => 'index')); ?>
+				<?php echo $this->Html->link(__('BLOG'), array('controller' => 'posts', 'action' => 'index', 'admin' => false)); ?>
 			</li>
 			<li>
-				<?php echo $this->Html->link(__('CONTACT'), array('controller' => 'messages', 'action' => 'contact')); ?>
+				<?php echo $this->Html->link(__('CONTACT'), array('controller' => 'messages', 'action' => 'contact', 'admin' => false)); ?>
 			</li>
 			<li>
 				<a href="https://github.com/antoniovassell" target="_blank"><i class="fa fa-github"></i></a>
