@@ -10,7 +10,7 @@
 				<a class="pull-left" href="#">
 					<?php
 					$imageUrl = $this->Gravatar->getGravatar($comment['email_address']);
-					echo $this->Html->image($imageUrl, array('class' => 'media-object', 'alt' => 'User image'));
+					echo $this->Html->image($imageUrl, array('class' => 'media-object img-circle user-image', 'alt' => 'User image'));
 					?>
 				</a>
 				<div class="media-body">

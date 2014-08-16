@@ -25,6 +25,11 @@ class Message extends AppModel {
 				'rule' => array('email')
 			)
 		),
+		'subject' => array(
+			'notEmpty' => array(
+				'rule' => array('notEmpty')
+			)
+		),
 		'website' => array(
 			'notEmpty' => array(
 				'rule' => array('notEmpty')
@@ -56,6 +61,9 @@ class Message extends AppModel {
 	public function add($postData) {
 		if (!empty($postData)) {
 			$postData['Message']['date'] = date('Y-m-d H:i:s');
+			if ($postData['Message']['url'] !== '' and $postData['Message']['url'] !== null) {
+				return false;
+			}
 			$this->set($postData);
 			if ($this->validates()) {
 				$this->create();

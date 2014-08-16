@@ -47,6 +47,7 @@
 	<?php echo $this->Session->flash(); ?>
 	<?php echo $this->fetch('content'); ?>
 </div>
+<?php echo $this->element('keep_intouch'); ?>
 <?php echo $this->element('footer'); ?>
 
 <!-- Bootstrap core JavaScript

@@ -18,10 +18,10 @@
 			</div>
 		</div>
 	</div>
-
+	<br/>
 	<div class="rainbow"></div>
 	<div class="about-me-section section">
-		<div class="container">
+		<div class="container material">
 			<div class="row">
 				<div class="col-lg-12">
 					<h1 class="text-center"><?php echo __('About Me'); ?></h1>
@@ -35,14 +35,14 @@
 	</div>
 	<div class="rainbow"></div>
 	<div class="blog-preview section">
-		<div class="container">
+		<div class="container material">
 			<div class="row">
 				<div class="col-md-12">
 					<h1 class="text-center"><?php echo __('Blog'); ?></h1>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-4 col-lg-offset-1">
+				<div class="col-md-4">
 					<h3><?php echo __('More About My Blog'); ?></h3>
 					<div class="rainbow"></div>
 					<p>I blog mostly about code in generally, specifically <b>CakePHP</b>, and <b>Artificial Intelligence</b>. <b>Global Issues</b> such as <b>Conflicts</b> and <b>Poverty</b> are some things I can't stand, you will here about those as well. </p>
@@ -51,10 +51,10 @@
 						<?php echo $this->Html->link(__('Go To Blog'), array('controller' => 'posts'), array('class' => 'btn btn-theme')); ?>
 					</p>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-md-4">
 					<?php echo $this->element('Posts/popular_post_titles'); ?>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-md-4">
 					<?php echo $this->element('Posts/latest_post_titles'); ?>
 				</div>
 			</div><! --/row -->

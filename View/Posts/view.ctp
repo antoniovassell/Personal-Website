@@ -7,7 +7,7 @@
  BLOG CONTENT
  ***************************************************************************************************************** -->
 
-<div class="container mtb">
+<div class="container material post-cont">
 	<div class="row">
 		<! -- SINGLE POST -->
 		<div class="col-md-12">
@@ -42,9 +42,17 @@
 				?>
 			</ul>
 			<?php echo $this->element('share'); ?>
-			<div class="comments">
-				<?php echo $this->element('comments', array('comments' => $post['Comment'], 'post_id' => $post['Post']['id'])); ?>
-			</div>
+
 		</div>
 	</div><! --/row -->
 </div><! --/container -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="comments">
+				<?php echo $this->element('comments', array('comments' => $post['Comment'], 'post_id' => $post['Post']['id'])); ?>
+				<br/>
+			</div>
+		</div>
+	</div>
+</div>
