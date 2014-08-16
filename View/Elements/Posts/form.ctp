@@ -9,6 +9,7 @@
 			<?php echo $this->Form->input('content', array('id' => 'post-content')); ?>
 			<?php echo $this->Form->input('category_id', array('id' => 'post-category', 'empty' => '')); ?>
 			<?php echo $this->Form->input('tags'); ?>
+			<?php echo $this->Form->input('keywords'); ?>
 			<?php echo $this->Form->end('Submit'); ?>
 		</div>
 	</div>

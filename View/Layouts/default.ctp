@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<title><?php echo 'Antonio Vassell - ' . $this->fetch('page_title'); ?></title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="">
-	<meta name="Antonio Vassell" content="">
+	<meta name="description" content="<?php echo $this->fetch('page_description'); ?>">
+	<meta name="keywords" content="Antonio Vassell, <?php echo $this->fetch('page_keywords'); ?>">
 	<link rel="icon" type="image/png" href="<?php echo $this->Html->url('/img/myicon.png'); ?>">
-	<title>Antonio Vassell</title>
 
 	<?php
 	echo $this->Html->css(array(
