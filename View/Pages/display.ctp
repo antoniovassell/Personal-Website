@@ -18,10 +18,10 @@
 			</div>
 		</div>
 	</div>
-
+	<br/>
 	<div class="rainbow"></div>
 	<div class="about-me-section section">
-		<div class="container">
+		<div class="container material">
 			<div class="row">
 				<div class="col-lg-12">
 					<h1 class="text-center"><?php echo __('About Me'); ?></h1>
@@ -35,7 +35,7 @@
 	</div>
 	<div class="rainbow"></div>
 	<div class="blog-preview section">
-		<div class="container">
+		<div class="container material">
 			<div class="row">
 				<div class="col-md-12">
 					<h1 class="text-center"><?php echo __('Blog'); ?></h1>
