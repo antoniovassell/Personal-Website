@@ -51,6 +51,7 @@
 		<div class="col-md-12">
 			<div class="comments">
 				<?php echo $this->element('comments', array('comments' => $post['Comment'], 'post_id' => $post['Post']['id'])); ?>
+				<br/>
 			</div>
 		</div>
 	</div>
