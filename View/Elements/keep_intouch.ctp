@@ -5,7 +5,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6">
-						<h3><?php echo __('Subscribe for updates, new blog posts, new apps that I am about to release. I promise I wont share your email.'); ?></h3>
+						<h3><?php echo __('Subscribe for updates, new blog posts, new apps that I am about to release.'); ?></h3>
 					</div>
 					<div class="col-md-6">
 						<br/>
@@ -23,7 +23,8 @@
 								'type' => 'email',
 								'label' => false,
 								'placeholder' => __('Your Email Address'),
-								'id' => 'subscribe-email'
+								'id' => 'subscribe-email',
+								'required' => true
 							)
 						);
 						?>

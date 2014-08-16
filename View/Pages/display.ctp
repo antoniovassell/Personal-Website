@@ -1,3 +1,8 @@
+<?php
+$this->start('page_keywords');
+echo __('blog, cakephp, posts, developer, web developer, antonio vassell');
+$this->end();
+?>
 <div id="homepage-wrapper">
 	<div id="bg-black">
 		<div id="home-header-wrapper">
