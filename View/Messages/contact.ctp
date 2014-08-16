@@ -9,7 +9,7 @@
 		</div>
 	</div>
 </div>
-<div class="container">
+<div class="container material">
 	<div class="row">
 		<div class="col-lg-4">
 			<h2><?php echo __('Message'); ?></h2>
