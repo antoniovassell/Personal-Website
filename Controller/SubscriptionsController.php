@@ -32,7 +32,7 @@ class SubscriptionsController extends AppController {
  */
 	public function beforeFilter() {
 		parent::beforeFilter();
-		$this->Auth->deny(array('admin_index'));
+		$this->Auth->allow(array('subscribe'));
 	}
 
 /**

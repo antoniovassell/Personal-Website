@@ -6,10 +6,10 @@ $this->start('page_title');
 echo $post['Post']['title'];
 $this->end();
 ?>
-<div class="container material post-cont">
+<div class="container post-cont">
 	<div class="row">
 		<! -- SINGLE POST -->
-		<div class="col-md-12">
+		<div class="col-md-9 material post-content">
 			<h1 class="ctitle"><a href="<?php echo $this->Html->url(array(
 					'controller' => 'posts',
 					'action' => 'view',
@@ -41,13 +41,15 @@ $this->end();
 				?>
 			</ul>
 			<?php echo $this->element('share'); ?>
-
+		</div>
+		<div class="col-md-3">
+			<?php echo $this->element('sidebar'); ?>
 		</div>
 	</div><! --/row -->
 </div><! --/container -->
 <div class="container">
 	<div class="row">
-		<div class="col-md-12">
+		<div class="col-md-9">
 			<div class="comments">
 				<?php echo $this->element('comments', array('comments' => $post['Comment'], 'post_id' => $post['Post']['id'])); ?>
 				<br/>

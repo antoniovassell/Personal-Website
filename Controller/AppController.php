@@ -11,6 +11,7 @@
  */
 
 App::uses('Controller', 'Controller');
+App::uses('Security', 'Utility');
 
 /**
  * Application Controller
@@ -39,6 +40,7 @@ class AppController extends Controller {
 
 /**
  * Components
+ *
  * @var array
  */
 	public $components = array(
@@ -60,7 +62,6 @@ class AppController extends Controller {
  * @return void
  */
 	public function beforeFilter() {
-		$this->Auth->allow();
 		$isAdmin = false;
 		$this->set(compact('isAdmin'));
 	}
