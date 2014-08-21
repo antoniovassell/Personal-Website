@@ -36,7 +36,21 @@
 					<div>
 						<?php echo $post['Post']['preview']; ?>
 					</div>
-					<p><?php echo $this->Html->link(__('[Read More]'), array('controller' => 'posts', 'action' => 'view', $post['Post']['slug'])); ?></p>
+					<p>
+						<?php
+						echo $this->Html->link(
+							__('Read More'),
+							array(
+								'controller' => 'posts',
+								'action' => 'view',
+								$post['Post']['slug']
+							),
+							array(
+								'class' => 'btn btn-default'
+							)
+						);
+						?>
+					</p>
 					<br/>
 					<span class="tags-label"><?php echo __('Tags'); ?> :</span>
 					<ul class="tagcloud">

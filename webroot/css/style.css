@@ -114,6 +114,9 @@
 .post-cont {
 	margin-top: 20px;
 }
+.post-content ul, .post-content ol {
+	margin-left: 20px;
+}
 #subscription-form #subscribe-btn {
 	width: 100%;
 }

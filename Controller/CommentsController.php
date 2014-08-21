@@ -15,6 +15,16 @@ class CommentsController extends AppController {
 	public $name = 'Comments';
 
 /**
+ * Before filter
+ *
+ * @return void
+ */
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow(array('add'));
+	}
+
+/**
  * Add new comment
  *
  * @return array	Json formatted array of response

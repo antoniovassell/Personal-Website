@@ -8,6 +8,16 @@ App::uses('AppController', 'Controller');
 class MessagesController extends AppController {
 
 /**
+ * Before filter
+ *
+ * @return void
+ */
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow(array('send_message', 'contact'));
+	}
+
+/**
  * Send Message
  *
  * @return void

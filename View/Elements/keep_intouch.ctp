@@ -5,7 +5,7 @@
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6">
-						<h3><?php echo __('Subscribe for updates, new blog posts, new apps that I am about to release.'); ?></h3>
+						<h4><?php echo __('Subscribe for updates, new blog posts, new apps that I am about to release.'); ?></h4>
 					</div>
 					<div class="col-md-6">
 						<br/>

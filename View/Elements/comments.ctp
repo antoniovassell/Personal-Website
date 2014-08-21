@@ -41,8 +41,9 @@
 	echo $this->Form->input('name', array('placeholder' => __('Your Name'), 'required', 'label' => false, 'required' => true));
 	echo $this->Form->input('email_address', array('placeholder' => __('Your Email Address'), 'label' => false, 'required' => true));
 	echo $this->Form->input('comment', array('type' => 'textarea', 'placeholder' => __('Your Comment'), 'label' => false, 'required' => true));
+	echo $this->Form->submit(__('Submit'), array('class' => 'btn btn-danger'));
 	?>
-	<?php echo $this->Form->end(__('Submit')); ?>
+	<?php echo $this->Form->end(); ?>
 </div>
 <?php
 echo $this->Html->script('jquery.form.min.js', array('inline' => false));
