@@ -35,6 +35,16 @@ class PostsController extends AppController {
 	);
 
 /**
+ * Before Filter
+ *
+ * @return void
+ */
+	public function beforeFilter() {
+		parent::beforeFilter();
+		$this->Auth->allow(array('index', 'add', 'view', 'recent_post_list', 'popular_post_list', 'popular_tags'));
+	}
+
+/**
  * Index
  *
  * @return void
