@@ -1,36 +1,9 @@
-# User specific & automatically generated files #
-#################################################
-/Config/database.php
-/Config/email.php
-/Config/core.php
-/tmp
-/lib/Cake/Console/Templates/skel/tmp/
-/plugins
-/vendors
-/build
-/dist
-/tags
-/Vendor/autoload.php
-/Vendor/composer
-/.idea
-/Vendor/cakephp
-/Plugin/DebugKit
-/Plugin/Migrations
-/Plugin/AssetCompress
-/Plugin/Cms
-/Plugin/Utils
-/Plugin/Tags
-/Plugin/Search
-/Plugin/Users
-/webroot/uploads
+/vendor/*
+/config/app.php
+/tmp/*
+/logs/*
 
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-Icon?
-ehthumbs.db
-Thumbs.db
+!empty
+/logs/*
+/plugins
+/.idea
