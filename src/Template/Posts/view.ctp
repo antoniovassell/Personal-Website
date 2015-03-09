@@ -63,6 +63,7 @@
 
         </div>
     </div>
+    <?php echo $this->element('Disqus/comments'); ?>
 </div>
 <div class="related row">
     <div class="column large-12">

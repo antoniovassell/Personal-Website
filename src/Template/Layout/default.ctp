@@ -54,6 +54,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         </div>
         <footer>
         </footer>
+        <?php echo $this->element('Disqus/total_comments'); ?>
     </div>
 </body>
 </html>
