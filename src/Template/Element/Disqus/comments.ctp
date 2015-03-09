@@ -1,4 +1,4 @@
-<?php if (\Cake\Core\Configure::read('debug') === true): ?>
+<?php if (\Cake\Core\Configure::read('debug') === false): ?>
 <div class="disqus-comments">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
@@ -12,6 +12,6 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+    <noscript><?= __('Please enable JavaScript to view the'); ?> <a href="https://disqus.com/?ref_noscript" rel="nofollow"> <?= __('comments powered by Disqus.'); ?></a></noscript>
 </div>
 <?php endif; ?>
