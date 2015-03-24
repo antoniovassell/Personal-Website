@@ -11,11 +11,14 @@
                                 <h3>
                                     <?= $this->Html->link($post->title, ['controller' => 'posts', 'action' => 'view', $post->id]); ?>
                                 </h3>
+                                <div class="post-details">
+                                    <span><?= h($post->date_published); ?></span>
+                                </div>
                                 <div class="post-preview">
                                     <?= $post->preview; ?>
                                 </div>
-                                <div class="post-tags">
-
+                                <div class="post-keywords">
+                                    <?= $post->keywords; ?>
                                 </div>
                             </div>
                             <hr />

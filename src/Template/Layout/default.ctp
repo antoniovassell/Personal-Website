@@ -5,11 +5,12 @@
 
     <?php
     echo $this->Html->css(array(
-        '/theme-assets/css/bootstrap',
+        '/bootflat/css/bootstrap.min.css',
+        '/bootflat/css/site.min.css',
         '/theme-assets/css/font-awesome.min',
-        '/theme-assets/css/style',
-        '/js-plugins/slitslider/css/style.css',
-        '/essentia-assets/css/slider1.css',
+        '/circle-slideshow/css/default.css',
+        '/circle-slideshow/css/component.css',
+        '/bootflat/bootflat/css/bootflat.min.css',
         'style'
     ));
     ?>

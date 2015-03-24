@@ -42,18 +42,13 @@ a {
 	text-decoration: none;
 }
 
-.container {
-	width: 100%;
-	position: relative;
-}
-
 .fc-slideshow-container {
 	background: #ff514c url(../images/noise.png);
 	padding-top: 100px;
 }
 
-.main,
-.container > header {
+.main
+/*.container > header */{
 	width: 90%;
 	max-width: 1240px;
 	margin: 0 auto;
@@ -62,7 +57,7 @@ a {
 	overflow: hidden;
 }
 
-.container > header {
+/*.container > header {
 	padding: 30px;
 }
 
@@ -78,7 +73,7 @@ a {
 	display: block;
 	font-size: 20px;
 	font-weight: 400;
-}
+}*/
 
 /* Header Style */
 .codrops-top {

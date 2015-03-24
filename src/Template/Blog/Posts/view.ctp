@@ -5,6 +5,9 @@
                 <div class="post-title">
                     <h2><?= h($post->title); ?></h2>
                 </div>
+                <div class="post-details">
+                    <span><?= h($post->date_published); ?></span>
+                </div>
                 <div class="row">
                     <div class="col-md-1">
                     </div>
@@ -12,6 +15,9 @@
                         <?= $post->content; ?>
                         <br/>
                         <br/>
+                        <div class="post-keywords">
+                            <?= $post->keywords; ?>
+                        </div>
                         <?php echo $this->element('Disqus/comments'); ?>
                     </div>
                     <div class="col-md-2 post-sidebar">
