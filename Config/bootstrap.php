@@ -182,6 +182,7 @@ Request::addDetector('tablet', function ($request) {
 Plugin::load('Migrations');
 Plugin::load('Crud');
 Plugin::load('CrudView');
+Plugin::load('Burzum/UserTools');
 
 // Only try to load DebugKit in development mode
 // Debug Kit should not be installed on a production system
@@ -195,6 +196,15 @@ if (Configure::read('debug')) {
 DispatcherFactory::add('Asset');
 DispatcherFactory::add('Routing');
 DispatcherFactory::add('ControllerFactory');
+
+Configure::write('UserTools.Component', [
+    'actionMap' => [
+        'login' => [
+            'method' => 'login',
+            'view' => 'login',
+        ]
+    ]
+]);
 
 Configure::load('menu_config');
 Configure::load('action_icon_config');

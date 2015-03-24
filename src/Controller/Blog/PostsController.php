@@ -1,7 +1,8 @@
 <?php
-namespace App\Controller;
+namespace App\Controller\Blog;
 
 use App\Controller\AppController;
+use Cake\Event\Event;
 
 /**
  * Posts Controller
@@ -19,7 +20,7 @@ class PostsController extends AppController
      */
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['view']);
+        $this->Auth->allow(['view', 'index']);
     }
 
     /**
