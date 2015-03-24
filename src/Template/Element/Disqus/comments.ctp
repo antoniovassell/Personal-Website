@@ -1,4 +1,4 @@
-<?php if (\Cake\Core\Configure::read('debug') === false): ?>
+<?php if (\Cake\Core\Configure::read('debug') === true): ?>
 <div class="disqus-comments">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
