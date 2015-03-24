@@ -28,6 +28,24 @@ class AppController extends Controller
 {
 
     /**
+     * Helpers
+     *
+     * @var array
+     */
+    public $helpers = [
+        'Form' => [
+            'widgets' => [
+                'date' => [
+                    'MyDate'
+                ],
+                'datetime' => [
+                    'MyDateTime'
+                ]
+            ]
+        ]
+    ];
+
+    /**
      * Initialization hook method.
      *
      * Use this method to add common initialization code like loading components.
