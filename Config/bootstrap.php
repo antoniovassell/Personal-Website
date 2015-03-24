@@ -208,3 +208,4 @@ Configure::write('UserTools.Component', [
 
 Configure::load('menu_config');
 Configure::load('action_icon_config');
+Configure::load('frontend');

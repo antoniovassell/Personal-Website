@@ -12,7 +12,15 @@
                                     <?= $this->Html->link($post->title, ['controller' => 'posts', 'action' => 'view', $post->id]); ?>
                                 </h3>
                                 <div class="post-details">
-                                    <span><?= h($post->date_published); ?></span>
+                                    <span>
+                                        <strong><?php
+                                        echo $this->Time->format(
+                                            $post->date_published,
+                                            \IntlDateFormatter::MEDIUM
+                                        );
+                                        ?>
+                                        </strong>
+                                    </span>
                                 </div>
                                 <div class="post-preview">
                                     <?= $post->preview; ?>
@@ -20,6 +28,8 @@
                                 <div class="post-keywords">
                                     <?= $post->keywords; ?>
                                 </div>
+                                <br/>
+                                <p><?= $this->Html->link(__('Read More'), ['controller' => 'posts', 'action' => 'view', $post->id], ['class' => 'btn btn-default btn-sm']); ?></p>
                             </div>
                             <hr />
                         <?php endforeach; ?>

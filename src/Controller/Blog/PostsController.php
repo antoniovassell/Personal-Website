@@ -31,7 +31,10 @@ class PostsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Categories']
+            'contain' => ['Categories'],
+            'conditions' => [
+                'Posts.published' => true
+            ]
         ];
         $this->set('posts', $this->paginate($this->Posts));
         $this->set('_serialize', ['posts']);
@@ -47,7 +50,7 @@ class PostsController extends AppController
     public function view($id = null)
     {
         $post = $this->Posts->get($id, [
-            'contain' => ['Categories', 'Comments', 'PostViews']
+            'contain' => ['Categories', 'PostViews']
         ]);
         $this->set('post', $post);
         $this->set('_serialize', ['post']);

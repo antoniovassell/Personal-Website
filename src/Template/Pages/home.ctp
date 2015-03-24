@@ -127,9 +127,7 @@
         </div>
         <div class="col-sm-6 col-md-3">
             <div class="thumbnail">
-
                 <div class="caption text-center"><h3>Thumbnail label</h3>
-
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
                         at eget metus. Nullam id ...</p>
 
@@ -145,145 +143,13 @@
 </div>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="text-center"><?php echo __('Portfolio'); ?></h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-
-                <div class="caption text-center">
-                    <?= $this->Html->image('/circle-slideshow/images/1.jpg'); ?>
-                    <h3>Thumbnail label</h3>
-
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                        at eget metus. Nullam id ...</p>
-
-                    <p class="text-center">
-                        <?= $this->Html->link(__('Read More'), '#', ['role' => 'button', 'class' => 'btn btn-warning']); ?>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-
-                <div class="caption text-center">
-                    <?= $this->Html->image('/circle-slideshow/images/2.jpg'); ?>
-                    <h3>Thumbnail label</h3>
-
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                        at eget metus. Nullam id ...</p>
-
-                    <p class="text-center">
-                        <?= $this->Html->link(__('Read More'), '#', ['role' => 'button', 'class' => 'btn btn-warning']); ?>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-
-                <div class="caption text-center">
-                    <?= $this->Html->image('/circle-slideshow/images/3.jpg'); ?>
-                    <h3>Thumbnail label</h3>
-
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                        at eget metus. Nullam id ...</p>
-
-                    <p class="text-center">
-                        <?= $this->Html->link(__('Read More'), '#', ['role' => 'button', 'class' => 'btn btn-warning']); ?>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-
-                <div class="caption text-center">
-                    <?= $this->Html->image('/circle-slideshow/images/4.jpg'); ?>
-                    <h3>Thumbnail label</h3>
-
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                        at eget metus. Nullam id ...</p>
-
-                    <p class="text-center">
-                        <?= $this->Html->link(__('Read More'), '#', ['role' => 'button', 'class' => 'btn btn-warning']); ?>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <p class="text-center">
-        <?= $this->Html->link(__('View Portfolio'), '/portfolio', ['role' => 'button', 'class' => 'btn btn-warning']); ?>
-        <?= $this->Html->link(__('View Resume'), '/resume', ['role' => 'button', 'class' => 'btn btn-warning']); ?>
-    </p>
+    <?= $this->element('Frontend/showcase', ['showcaseData' => Cake\Core\Configure::read('ShowcaseData.portfolio')]); ?>
 </div>
 
 <div class="container-fluid featured-website-area">
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="text-center"><?php echo __('Featured Websites'); ?></h1>
-            <br/>
-        </div>
+    <div class="container">
+        <?= $this->element('Frontend/jombotron', ['jombotronData' => Cake\Core\Configure::read('JombotronData.featured_websites')]); ?>
     </div>
-    <div class="row">
-        <div class="col-md-4">
-            <div class="jumbotron">
-                <div class="jumbotron-photo">
-                    <?= $this->Html->image('/circle-slideshow/images/1.jpg'); ?>
-                </div>
-                <div class="jumbotron-contents">
-                    <h1>Budget</h1>
-                    <h2>Personal Budget Application</h2>
-                    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-                        featured content or information.
-                    </p>
-                    <p class="text-center">
-                        <a href="#" class="btn btn-warning" role="button">Get Started</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="jumbotron">
-                <div class="jumbotron-photo">
-                    <?= $this->Html->image('/circle-slideshow/images/2.jpg'); ?>
-                </div>
-                <div class="jumbotron-contents">
-                    <h1>Bucklestalk</h1>
-                    <h2>Personal Budget Application</h2>
-                    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-                        featured content or information.
-                    </p>
-                    <p class="text-center">
-                        <a href="#" class="btn btn-warning" role="button">Get Started</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="jumbotron">
-                <div class="jumbotron-photo">
-                    <?= $this->Html->image('/circle-slideshow/images/3.jpg'); ?>
-                </div>
-                <div class="jumbotron-contents">
-                    <h1>Wordiator</h1>
-                    <h2>Personal Budget Application</h2>
-                    <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-                        featured content or information.
-                    </p>
-                    <p class="text-center">
-                        <a href="#" class="btn btn-warning" role="button">Get Started</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 </div>
 <div class="container">
 
