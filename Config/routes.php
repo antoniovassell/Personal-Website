@@ -63,6 +63,14 @@ Router::scope('/', function ($routes) {
         $routes->fallbacks('InflectedRoute');
     });
 
+    Router::prefix('blog', function ($routes) {
+        // Because you are in the admin scope,
+        // you do not need to include the /admin prefix
+        // or the admin route element.
+        $routes->connect('/', ['controller' => 'Posts', 'action' => 'index']);
+        $routes->fallbacks('InflectedRoute');
+    });
+
     /**
      * Connect catchall routes for all controllers.
      *
