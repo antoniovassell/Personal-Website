@@ -180,6 +180,8 @@ Request::addDetector('tablet', function ($request) {
  */
 
 Plugin::load('Migrations');
+Plugin::load('Crud');
+Plugin::load('CrudView');
 
 // Only try to load DebugKit in development mode
 // Debug Kit should not be installed on a production system
@@ -195,3 +197,4 @@ DispatcherFactory::add('Routing');
 DispatcherFactory::add('ControllerFactory');
 
 Configure::load('menu_config');
+Configure::load('action_icon_config');

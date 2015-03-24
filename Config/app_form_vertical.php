@@ -1,5 +1,5 @@
 <?php
-return array(
+return [
     'inputContainer' => '<div class="form-group">{{content}}</div>',
     'inputContainerError' => '<div class="form-group has-error">{{content}}</div>',
     'formStart' => '<form {{attrs}} class="form">',
@@ -10,8 +10,8 @@ return array(
     'error' => '<span class="help-block">{{content}}</span>',
     'checkboxContainer' => '<div class="form-group">{{content}}</div><br/>',
     'checkboxFormGroup' => '{{label}}',
-    'checkbox' => '<input type="checkbox" checked="{{value}}" name="{{name}}" {{attrs}} class="minimal-red" />',
+    'checkbox' => '<input type="checkbox" value="{{value}}" name="{{name}}" {{attrs}} class="minimal-red" />',
     'select' => '<select {{attrs}} class="form-control" name="{{name}}">{{content}}</select>',
     'button' => '<div style="padding-left:3px">'
         . '<button {{attrs}} class="btn btn-danger">{{text}}</button>'
-);
+];
