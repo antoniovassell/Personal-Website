@@ -1,4 +1,4 @@
-<?php if (\Cake\Core\Configure::read('debug') === false): ?>
+<?php if (\Cake\Core\Configure::read('debug') === true): ?>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = '<?= \Cake\Core\Configure::read('Disqus.shortname'); ?>';
