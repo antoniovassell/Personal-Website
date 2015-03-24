@@ -27,6 +27,15 @@ use App\Controller\AppController;
 class AdminController extends AppController
 {
 
+    use \Crud\Controller\ControllerTrait;
+
+    /**
+     * View class
+     *
+     * @var string
+     */
+    public $viewClass = 'CrudView\View\CrudView';
+
     /**
      * Helpers
      *
@@ -35,12 +44,35 @@ class AdminController extends AppController
     public $helpers = [
         'Form' => [
             'errorClass' => 'form-control',
-            'templates' => 'app_form_vertical'
+            'templates' => 'app_form_vertical',
+            'widgets' => [
+                'date' => [
+                    'MyDate'
+                ],
+                'datetime' => [
+                    'MyDateTime'
+                ]
+            ]
+        ],
+        'Paginator' => ['templates' => 'CrudView.paginator']
+    ];
+
+    public $components = [
+        'Crud.Crud' => [
+            'actions' => [
+                'Crud.Index',
+                'Crud.Add',
+                'Crud.Edit',
+                'Crud.View',
+                'Crud.Delete'
+            ],
+            'listeners' => ['CrudView.View', 'Crud.RelatedModels', 'Crud.Redirect']
         ]
     ];
 
     public function initialize()
     {
+        $this->layout = 'CrudView.default';
         parent::initialize();
     }
 }

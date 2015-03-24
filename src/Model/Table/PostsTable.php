@@ -48,8 +48,7 @@ class PostsTable extends Table
         $validator
             ->add('id', 'valid', ['rule' => 'numeric'])
             ->allowEmpty('id', 'create')
-            ->requirePresence('slug', 'create')
-            ->notEmpty('slug')
+            ->allowEmpty('slug')
             ->requirePresence('title', 'create')
             ->notEmpty('title')
             ->requirePresence('content', 'create')
@@ -57,11 +56,6 @@ class PostsTable extends Table
             ->add('date_published', 'valid', ['rule' => 'datetime'])
             ->allowEmpty('date_published')
             ->add('post_view_count', 'valid', ['rule' => 'numeric'])
-            ->requirePresence('post_view_count', 'create')
-            ->notEmpty('post_view_count')
-            ->add('comment_count', 'valid', ['rule' => 'numeric'])
-            ->requirePresence('comment_count', 'create')
-            ->notEmpty('comment_count')
             ->requirePresence('preview', 'create')
             ->notEmpty('preview')
             ->allowEmpty('image')
@@ -69,8 +63,6 @@ class PostsTable extends Table
             ->requirePresence('category_id', 'create')
             ->notEmpty('category_id')
             ->add('published', 'valid', ['rule' => 'boolean'])
-            ->requirePresence('published', 'create')
-            ->notEmpty('published')
             ->allowEmpty('keywords');
 
         return $validator;

@@ -30,4 +30,11 @@ class Post extends Entity
         'comments' => true,
         'post_views' => true,
     ];
+
+    /**
+     * Table Actions for this model
+     *
+     * @var array
+     */
+    public $tableActions = ['edit', 'view', 'delete'];
 }
