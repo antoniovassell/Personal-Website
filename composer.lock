@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "255c9f6d7320940055c8a2d33eda43b8",
+    "hash": "d0ddaeefdcc3bacf68f2a33290c03f1d",
     "packages": [
         {
             "name": "aura/installer-default",
@@ -124,6 +124,60 @@
                 "localization"
             ],
             "time": "2014-08-24 00:00:00"
+        },
+        {
+            "name": "burzum/cakephp-user-tools",
+            "version": "1.0.0-beta-1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/burzum/cakephp-user-tools.git",
+                "reference": "0f9c6edf7f0ce8eb9e191a6336f11cb868297469"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/burzum/cakephp-user-tools/zipball/0f9c6edf7f0ce8eb9e191a6336f11cb868297469",
+                "reference": "0f9c6edf7f0ce8eb9e191a6336f11cb868297469",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/plugin-installer": "*",
+                "php": ">=5.4.16"
+            },
+            "require-dev": {
+                "cakephp/cakephp": "3.0.*-dev",
+                "phpunit/phpunit": "*"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "Burzum/UserTools"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Burzum\\UserTools\\": "src",
+                    "Burzum\\UserTools\\Test\\Fixture\\": "tests\\Fixture"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Krämer",
+                    "homepage": "http://florian-kraemer.net",
+                    "role": "Author"
+                }
+            ],
+            "description": "This plugin is a set of tools for user handling like registration, login, email verification, password reset and much more.",
+            "homepage": "http://github.com/burzum/cakephp-user-tools",
+            "keywords": [
+                "Users",
+                "login",
+                "registration",
+                "signup",
+                "user-management"
+            ],
+            "time": "2014-12-16 14:03:47"
         },
         {
             "name": "cakephp/cakephp",
@@ -355,16 +409,16 @@
         },
         {
             "name": "friendsofcake/crud-view",
-            "version": "dev-master",
+            "version": "dev-dev-adminlte",
             "source": {
                 "type": "git",
-                "url": "https://github.com/FriendsOfCake/crud-view.git",
-                "reference": "73e0283d262b12a9e11e6f62c5225bb8b5043b83"
+                "url": "https://github.com/antoniovassell/crud-view.git",
+                "reference": "7201c09619cd97060f936c1c13a23e2df3605ab0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfCake/crud-view/zipball/73e0283d262b12a9e11e6f62c5225bb8b5043b83",
-                "reference": "73e0283d262b12a9e11e6f62c5225bb8b5043b83",
+                "url": "https://api.github.com/repos/antoniovassell/crud-view/zipball/7201c09619cd97060f936c1c13a23e2df3605ab0",
+                "reference": "7201c09619cd97060f936c1c13a23e2df3605ab0",
                 "shasum": ""
             },
             "require": {
@@ -385,15 +439,14 @@
                     "CrudView\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "authors": [
                 {
                     "name": "Christian Winther",
-                    "homepage": "http://cakephp.nu/",
-                    "role": "Author"
+                    "role": "Author",
+                    "homepage": "http://cakephp.nu/"
                 }
             ],
             "description": "View layer for CRUD",
@@ -410,7 +463,13 @@
                 "scaffolding",
                 "update"
             ],
-            "time": "2015-02-17 16:00:28"
+            "support": {
+                "source": "https://github.com/FriendsOfCake/crud-view",
+                "issues": "https://github.com/FriendsOfCake/crud-view/issues",
+                "wiki": "http://cakephp.nu/cakephp-crud/",
+                "irc": "irc://irc.freenode.org/friendsofcake"
+            },
+            "time": "2015-03-24 05:44:45"
         },
         {
             "name": "ircmaxell/password-compat",

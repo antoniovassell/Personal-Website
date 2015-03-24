@@ -14,7 +14,10 @@
  */
 namespace App\Controller;
 
+use Cake\Auth\DefaultPasswordHasher;
+use Cake\Auth\PasswordHasherFactory;
 use Cake\Controller\Controller;
+use Cake\Event\Event;
 
 /**
  * Application Controller
@@ -34,6 +37,8 @@ class AppController extends Controller
      */
     public $helpers = [
         'Form' => [
+            'errorClass' => 'form-control',
+            'templates' => 'app_form_vertical',
             'widgets' => [
                 'date' => [
                     'MyDate'
@@ -41,6 +46,32 @@ class AppController extends Controller
                 'datetime' => [
                     'MyDateTime'
                 ]
+            ]
+        ]
+    ];
+
+    /**
+     * Components
+     *
+     * @var array
+     */
+    public $components = [
+        'Auth' => [
+            'loginAction' => [
+                'controller' => 'Users',
+                'action' => 'login',
+                'plugin' => false,
+                'prefix' => false
+            ],
+            'loginRedirect' => [
+                'controller' => 'Posts',
+                'action' => 'dashboard',
+                'prefix' => 'admin'
+            ],
+            'logoutRedirect' => [
+                'controller' => 'Pages',
+                'action' => 'display',
+                'home'
             ]
         ]
     ];
@@ -55,5 +86,27 @@ class AppController extends Controller
     public function initialize()
     {
         $this->loadComponent('Flash');
+    }
+
+    /**
+     * Before filter callback
+     *
+     * @param Event $event
+     * @return void
+     */
+    public function beforeFilter(Event $event)
+    {
+        $this->Auth->allow(['display']);
+    }
+
+    /**
+     * BeforeRender callback
+     *
+     * @param Event $event
+     * @return void
+     */
+    public function beforeRender(Event $event)
+    {
+        $this->set('userData', $this->Auth->user());
     }
 }
