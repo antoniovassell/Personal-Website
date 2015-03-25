@@ -11,12 +11,25 @@
                                 <h3>
                                     <?= $this->Html->link($post->title, ['controller' => 'posts', 'action' => 'view', $post->id]); ?>
                                 </h3>
+                                <div class="post-details">
+                                    <span>
+                                        <strong><?php
+                                        echo $this->Time->format(
+                                            $post->date_published,
+                                            \IntlDateFormatter::MEDIUM
+                                        );
+                                        ?>
+                                        </strong>
+                                    </span>
+                                </div>
                                 <div class="post-preview">
                                     <?= $post->preview; ?>
                                 </div>
-                                <div class="post-tags">
-
+                                <div class="post-keywords">
+                                    <?= $this->element('tags', ['tags' => $post->tags]); ?>
                                 </div>
+                                <br/>
+                                <p><?= $this->Html->link(__('Read More'), ['controller' => 'posts', 'action' => 'view', $post->id], ['class' => 'btn btn-default btn-sm']); ?></p>
                             </div>
                             <hr />
                         <?php endforeach; ?>

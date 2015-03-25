@@ -26,9 +26,11 @@ class Post extends Entity
         'category_id' => true,
         'published' => true,
         'keywords' => true,
+        'tags' => true,
+        'tagged' => true,
         'category' => true,
         'comments' => true,
-        'post_views' => true,
+        'post_views' => true
     ];
 
     /**
@@ -37,4 +39,24 @@ class Post extends Entity
      * @var array
      */
     public $tableActions = ['edit', 'view', 'delete'];
+
+    /**
+     * Get tag string
+     *
+     * @return string
+     */
+    protected function _getTagString()
+    {
+        if (isset($this->_properties['keywords'])) {
+            return $this->_properties['keywords'];
+        }
+        if (empty($this->tags)) {
+            return '';
+        }
+        $tags = new Collection($this->tags);
+        $str = $tags->reduce(function ($string, $tag) {
+            return $string . $tag->name . ', ';
+        }, '');
+        return trim($str, ', ');
+    }
 }

@@ -15,6 +15,12 @@
 			<li class="active">
 				<?php echo $this->Html->link(__('HOME'), '/'); ?>
 			</li>
+            <li>
+                <?php echo $this->Html->link(__('PORTFOLIO'), '/portfolio'); ?>
+            </li>
+            <li>
+                <?php echo $this->Html->link(__('RESUME'), '/resume'); ?>
+            </li>
 			<li>
 				<?php echo $this->Html->link(__('BLOG'), '/blog'); ?>
 			</li>

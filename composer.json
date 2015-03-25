@@ -18,7 +18,8 @@
         "cakephp/plugin-installer": "*",
         "FriendsOfCake/crud": "dev-cake3",
         "FriendsOfCake/crud-view": "dev-dev-adminlte",
-        "burzum/cakephp-user-tools": "1.0.0-beta-1"
+        "burzum/cakephp-user-tools": "1.0.0-beta-1",
+        "cakedc/tags": "3.0.*@dev"
     },
     "require-dev": {
         "d11wtq/boris": "1.0.*",
