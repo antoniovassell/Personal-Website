@@ -3,6 +3,7 @@
 /tmp/*
 /logs/*
 
+!**/empty
 !empty
 /plugins
 /.idea
