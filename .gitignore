@@ -4,7 +4,6 @@
 /logs/*
 
 !empty
-/logs/*
 /plugins
 /.idea
 composer.lock

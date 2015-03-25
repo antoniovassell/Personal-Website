@@ -36,6 +36,7 @@ return [
      *   paths for plugins, view templates and locale files respectively.
      */
     'App' => [
+        'name' => 'Antonio Vassell',
         'namespace' => 'App',
         'encoding' => 'UTF-8',
         'base' => false,
@@ -49,9 +50,13 @@ return [
         'jsBaseUrl' => 'js/',
         'paths' => [
             'plugins' => [ROOT . DS . 'plugins' . DS],
-            'templates' => [APP . 'Template' . DS],
+            'templates' => [APP . 'Template' . DS, ROOT . DS . 'vendor' . DS . 'friendsofcake' . DS . 'crud-view' . DS . 'src' . DS . 'Template' . DS],
             'locales' => [APP . 'Locale' . DS],
         ],
+    ],
+
+    'Disqus' => [
+        'shortname' => 'antoniovassell'
     ],
 
     /**
@@ -62,7 +67,7 @@ return [
      *   You should treat it as extremely sensitive data.
      */
     'Security' => [
-        'salt' => '__SALT__',
+        'salt' => '5e470780a867e7a2afec74dd4e227d63f90e4c2d6ceefd51551',
     ],
 
     /**
@@ -198,7 +203,7 @@ return [
             'from' => 'you@localhost',
             //'charset' => 'utf-8',
             //'headerCharset' => 'utf-8',
-        ],
+        ]
     ],
 
     /**
@@ -219,9 +224,9 @@ return [
             * the following line and set the port accordingly
             */
             //'port' => 'nonstandard_port_number',
-            'username' => 'my_app',
-            'password' => 'secret',
-            'database' => 'my_app',
+            'username' => '',
+            'password' => '',
+            'database' => 'myblogdb',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
@@ -255,9 +260,9 @@ return [
             'persistent' => false,
             'host' => 'localhost',
             //'port' => 'nonstandard_port_number',
-            'username' => 'my_app',
-            'password' => 'secret',
-            'database' => 'test_myapp',
+            'username' => '',
+            'password' => '',
+            'database' => 'myblogdb_test',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
