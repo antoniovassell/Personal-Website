@@ -1,10 +1,10 @@
 /vendor/*
 /config/app.php
+!empty
+!**/empty
 /tmp/*
 /logs/*
 
-!**/empty
-!empty
 /plugins
 /.idea
 composer.lock
