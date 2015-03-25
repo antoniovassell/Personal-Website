@@ -42,12 +42,12 @@ class TagsTable extends Table
             ->allowEmpty('id', 'create')
             ->allowEmpty('identifier')
             ->requirePresence('name', 'create')
-            ->notEmpty('name')
-            ->requirePresence('keyname', 'create')
+            ->notEmpty('name');
+            /*->requirePresence('keyname', 'create')
             ->notEmpty('keyname')
             ->add('occurrence', 'valid', ['rule' => 'numeric'])
             ->requirePresence('occurrence', 'create')
-            ->notEmpty('occurrence');
+            ->notEmpty('occurrence');*/
 
         return $validator;
     }

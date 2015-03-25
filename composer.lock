@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d0ddaeefdcc3bacf68f2a33290c03f1d",
+    "hash": "d4f6662bb52a250bcc7c14bbdecc6404",
     "packages": [
         {
             "name": "aura/installer-default",
@@ -180,6 +180,58 @@
             "time": "2014-12-16 14:03:47"
         },
         {
+            "name": "cakedc/tags",
+            "version": "3.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/CakeDC/tags.git",
+                "reference": "c8ac6e80d799a75d626fb7f907ec7f9e7c745062"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/CakeDC/tags/zipball/c8ac6e80d799a75d626fb7f907ec7f9e7c745062",
+                "reference": "c8ac6e80d799a75d626fb7f907ec7f9e7c745062",
+                "shasum": ""
+            },
+            "require": {
+                "cakephp/cakephp": "3.0.x-dev",
+                "cakephp/plugin-installer": "*",
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "cakephp-plugin",
+            "extra": {
+                "installer-name": "Tags"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tags\\": "src",
+                    "Tags\\Test\\Fixture\\": "tests\\Fixture"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cake Development Corporation",
+                    "email": "team@cakedc.com",
+                    "homepage": "http://cakedc.com"
+                }
+            ],
+            "description": "Tags plugin for CakePHP.",
+            "homepage": "http://github.com/CakeDC/tags",
+            "keywords": [
+                "cakephp",
+                "plugin",
+                "tags"
+            ],
+            "time": "2015-01-23 14:59:27"
+        },
+        {
             "name": "cakephp/cakephp",
             "version": "3.0.x-dev",
             "source": {
@@ -344,16 +396,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfCake/crud.git",
-                "reference": "67681d2d8d6c3224629c74b9e28221d2a540741d"
+                "reference": "b8ac368b8c26e5b656c36a9d082cc77c2c1180d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/67681d2d8d6c3224629c74b9e28221d2a540741d",
-                "reference": "67681d2d8d6c3224629c74b9e28221d2a540741d",
+                "url": "https://api.github.com/repos/FriendsOfCake/crud/zipball/b8ac368b8c26e5b656c36a9d082cc77c2c1180d3",
+                "reference": "b8ac368b8c26e5b656c36a9d082cc77c2c1180d3",
                 "shasum": ""
             },
             "require": {
-                "cakephp/cakephp": "3.0.*-dev"
+                "cakephp/cakephp": "~3.0"
             },
             "require-dev": {
                 "friendsofcake/cakephp-test-utilities": "dev-master",
@@ -405,7 +457,7 @@
                 "scaffolding",
                 "update"
             ],
-            "time": "2015-02-02 18:37:21"
+            "time": "2015-03-24 19:16:35"
         },
         {
             "name": "friendsofcake/crud-view",
@@ -1074,6 +1126,7 @@
         "cakephp/migrations": 20,
         "friendsofcake/crud": 20,
         "friendsofcake/crud-view": 20,
+        "cakedc/tags": 20,
         "cakephp/debug_kit": 20,
         "cakephp/bake": 20
     },

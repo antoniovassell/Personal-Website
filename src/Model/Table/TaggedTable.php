@@ -38,7 +38,7 @@ class TaggedTable extends Table
      */
     public function validationDefault(Validator $validator)
     {
-        $validator
+        /*$validator
             ->allowEmpty('id', 'create')
             ->requirePresence('foreign_key', 'create')
             ->notEmpty('foreign_key')
@@ -49,7 +49,7 @@ class TaggedTable extends Table
             ->allowEmpty('language')
             ->add('times_tagged', 'valid', ['rule' => 'numeric'])
             ->requirePresence('times_tagged', 'create')
-            ->notEmpty('times_tagged');
+            ->notEmpty('times_tagged');*/
 
         return $validator;
     }

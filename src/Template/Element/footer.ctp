@@ -10,14 +10,37 @@ canvas {
     bottom: 0;
     z-index: 10;
     width: 100%;
-    text-align: center;
 }
 </style>
 
-<div id="footercont">
+<div id="footercont" class="footer">
 	<div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer-logo">
+                    <a href="/">
+                        <?= $this->Html->image('antoniovassell.icon.png'); ?> Antonio Vassell
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <dl class="footer-nav">
+                    <dt class="nav-title"><?= __('Your Destiny'); ?></dt>
+                    <dd class="nav-item"><?= $this->Html->link(__('Budget'), '#'); ?></dd>
+                    <dd class="nav-item"><?= $this->Html->link(__('Buckestalk'), '#'); ?></dd>
+                    <dd class="nav-item"><?= $this->Html->link(__('Wordiator'), '#'); ?></dd>
+                </dl>
+            </div>
+            <div class="col-md-4">
+                <h3><?= __('Newsletter'); ?></h3>
+                <?= $this->Form->create('Newsletter'); ?>
+                <?= $this->Form->input('email_address'); ?>
+                <?= $this->Form->button(__('Subscribe')); ?>
+                <?= $this->Form->end(); ?>
+            </div>
+        </div><! --/row -->
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-md-12">
 				<p class="f-content">&copy; 2014 <?= \Cake\Core\Configure::read('App.name'); ?>. All rights reserved.</p>
 			</div>
 		</div><! --/row -->
