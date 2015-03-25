@@ -30,6 +30,11 @@
         echo $this->element('google_analytics');
     }
     ?>
+    <style>
+        #content-wrapper {
+            margin-top: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -38,7 +43,6 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <?php echo $this->element('header'); ?>
 </div>
-<br/>
 <br/>
 <br/>
 <br/>

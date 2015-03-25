@@ -1,46 +1,6 @@
-<?php
-$jombotronData = [
-    'title' => 'Featured Websites',
-    'items' => [
-        [
-            'image' => '/circle-slideshow/images/1.jpg',
-            'title' => 'Budget',
-            'subtitle' => 'Personal Budgeting Application',
-            'description' => 'Personal Budgeting Application Personal Budgeting Application Personal Budgeting Application Personal Budgeting Application',
-            'link' => [
-                'title' => __('Visit'),
-                'url' => '#',
-                'options' => ['class' => 'btn btn-warning', 'role' => 'button']
-            ]
-        ],
-        [
-            'image' => '/circle-slideshow/images/1.jpg',
-            'title' => 'Budget',
-            'subtitle' => 'Personal Budgeting Application',
-            'description' => 'Personal Budgeting Application Personal Budgeting Application Personal Budgeting Application Personal Budgeting Application',
-            'link' => [
-                'title' => __('Visit'),
-                'url' => '#',
-                'options' => ['class' => 'btn btn-warning', 'role' => 'button']
-            ]
-        ],
-        [
-            'image' => '/circle-slideshow/images/1.jpg',
-            'title' => 'Budget',
-            'subtitle' => 'Personal Budgeting Application',
-            'description' => 'Personal Budgeting Application Personal Budgeting Application Personal Budgeting Application Personal Budgeting Application',
-            'link' => [
-                'title' => __('Visit'),
-                'url' => '#',
-                'options' => ['class' => 'btn btn-warning', 'role' => 'button']
-            ]
-        ]
-    ]
-]
-;?>
 <div class="row">
     <div class="col-md-12">
-        <h1 class="text-center"><?php echo __('Featured Websites'); ?></h1>
+        <h1 class="text-center"><?= $jombotronData['title'] ?></h1>
         <br/>
     </div>
 </div>

@@ -20,7 +20,7 @@ class PostsController extends AppController
      */
     public function beforeFilter(Event $event)
     {
-        $this->Auth->allow(['view', 'index']);
+        $this->Auth->allow(['view', 'index', 'tags']);
     }
 
     /**
@@ -31,7 +31,7 @@ class PostsController extends AppController
     public function index()
     {
         $this->paginate = [
-            'contain' => ['Categories'],
+            'contain' => ['Categories', 'Tags', 'PostViews'],
             'conditions' => [
                 'Posts.published' => true
             ]
@@ -50,9 +50,24 @@ class PostsController extends AppController
     public function view($id = null)
     {
         $post = $this->Posts->get($id, [
-            'contain' => ['Categories', 'PostViews']
+            'contain' => ['Categories', 'Tags', 'PostViews']
         ]);
         $this->set('post', $post);
+        $this->set('page_title', $post->title);
         $this->set('_serialize', ['post']);
+    }
+
+    /**
+     * Lists of tags
+     *
+     * @return void
+     */
+    public function tags()
+    {
+        $tags = $this->request->params['pass'];
+        $posts = $this->Posts->find('tagged', [
+            'tags' => $tags
+        ]);
+        $this->set(compact('posts', 'tags'));
     }
 }

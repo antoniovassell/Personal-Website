@@ -26,7 +26,7 @@
                                     <?= $post->preview; ?>
                                 </div>
                                 <div class="post-keywords">
-                                    <?= $post->keywords; ?>
+                                    <?= $this->element('tags', ['tags' => $post->tags]); ?>
                                 </div>
                                 <br/>
                                 <p><?= $this->Html->link(__('Read More'), ['controller' => 'posts', 'action' => 'view', $post->id], ['class' => 'btn btn-default btn-sm']); ?></p>

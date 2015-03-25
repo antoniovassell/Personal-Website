@@ -29,6 +29,10 @@ class PostsTable extends Table
         $this->belongsTo('Categories', [
             'foreignKey' => 'category_id'
         ]);
+        $this->belongsToMany('Tags', [
+            'foreignKey' => 'foreign_key',
+            'joinTable' => 'tagged'
+        ]);
         $this->hasMany('Comments', [
             'foreignKey' => 'post_id'
         ]);
@@ -78,6 +82,75 @@ class PostsTable extends Table
     public function buildRules(RulesChecker $rules)
     {
         $rules->add($rules->existsIn(['category_id'], 'Categories'));
+
         return $rules;
+    }
+
+    /**
+     * Finder query tags for posts
+     *
+     * @param Query $query
+     * @param array $options
+     * @return $this
+     */
+    public function findTagged(Query $query, array $options)
+    {
+        $fields = [
+            'Posts.id',
+            'Posts.title'
+        ];
+
+        return $this->find()
+            ->distinct($fields)
+            ->matching('Tags', function ($q) use ($options) {
+                return $q->where(['Tags.name IN' => $options['tags']]);
+            });
+    }
+
+    /**
+     * Before save callback
+     *
+     * @param $event
+     * @param $entity
+     * @param $options
+     * @return boolean
+     */
+    public function beforeSave($event, $entity, $options)
+    {
+        if ($entity->keywords) {
+            $entity->tags = $this->_buildTags($entity->keywords);
+        }
+        return true;
+    }
+
+    /**
+     * Saving tags
+     *
+     * @param $tagString
+     * @return object
+     */
+    protected function _buildTags($tagString)
+    {
+        $new = array_unique(array_map('trim', explode(',', $tagString)));
+        $out = [];
+        $query = $this->Tags->find()
+            ->where(['Tags.name IN' => $new]);
+
+        // Remove existing tags from the list of new tags.
+        foreach ($query->extract('name') as $existing) {
+            $index = array_search($existing, $new);
+            if ($index !== false) {
+                unset($new[$index]);
+            }
+        }
+        // Add existing tags.
+        foreach ($query as $tag) {
+            $out[] = $tag;
+        }
+        // Add new tags.
+        foreach ($new as $tag) {
+            $out[] = $this->Tags->newEntity(['name' => $tag]);
+        }
+        return $out;
     }
 }

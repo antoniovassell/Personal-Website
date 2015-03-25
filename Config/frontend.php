@@ -63,7 +63,7 @@ return [
                     ]
                 ],
                 [
-                    'image' => '/circle-slideshow/images/1.jpg',
+                    'image' => '/circle-slideshow/images/2.jpg',
                     'title' => 'Budget',
                     'subtitle' => 'Personal Budgeting Application',
                     'description' => 'Personal Budgeting Application Personal Budgeting Application Personal Budgeting Application Personal Budgeting Application',
@@ -74,7 +74,7 @@ return [
                     ]
                 ],
                 [
-                    'image' => '/circle-slideshow/images/1.jpg',
+                    'image' => '/circle-slideshow/images/3.jpg',
                     'title' => 'Budget',
                     'subtitle' => 'Personal Budgeting Application',
                     'description' => 'Personal Budgeting Application Personal Budgeting Application Personal Budgeting Application Personal Budgeting Application',
