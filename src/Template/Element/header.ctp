@@ -40,7 +40,7 @@
 				<a href="https://www.facebook.com/antonio.vassell" target="_blank"><i class="fa fa-facebook"></i></a>
 			</li>
 			<li>
-				<a href="http://instagram.com/antonio_vassell" target="_blank"><i class="fa fa-instagram"></i></a>
+				<a href="http://instagram.com/antoniovassell" target="_blank"><i class="fa fa-instagram"></i></a>
 			</li>
 			<li>
 				<a href="http://www.linkedin.com/in/antoniovassell" target="_blank"><i class="fa fa-linkedin"></i></a>
