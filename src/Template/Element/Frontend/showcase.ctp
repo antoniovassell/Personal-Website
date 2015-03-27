@@ -9,7 +9,7 @@
             <div class="thumbnail">
                 <div class="caption text-center">
                     <?php
-                        $this->Html->image($item['image']);
+                        echo $this->Html->image($item['image']);
                     ?>
                     <h3><?= $item['title']; ?></h3>
 
