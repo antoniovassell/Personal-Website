@@ -203,7 +203,19 @@ img {
 .blog-header h2 {
     color: #fff;
 }
-
+.btn-warning {
+    background: #ff514c;
+}
+#contact-map-wrap {
+    position: relative;
+    height: 400px;
+}
+#map_canvas {
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
+    height: 400px;
+}
 /****** SOCIAL BUTTONS **********/
 /* Social Icons - small
 =================================================================== */

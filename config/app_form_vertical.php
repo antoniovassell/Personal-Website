@@ -13,5 +13,5 @@ return [
     'checkbox' => '<input type="checkbox" value="{{value}}" name="{{name}}" {{attrs}} class="minimal-red" />',
     'select' => '<select {{attrs}} class="form-control" name="{{name}}">{{content}}</select>',
     'button' => '<div style="padding-left:3px">'
-        . '<button {{attrs}} class="btn btn-danger">{{text}}</button>'
+        . '<button {{attrs}} class="btn btn-danger">{{text}}</button></div>'
 ];
