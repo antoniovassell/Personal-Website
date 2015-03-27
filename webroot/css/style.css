@@ -210,6 +210,9 @@ img {
     position: relative;
     height: 400px;
 }
+#map_canvas > .gm-style > div a {
+    display: none !important;
+}
 #map_canvas {
     opacity: 0.9;
     position: absolute;
