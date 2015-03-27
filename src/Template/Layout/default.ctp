@@ -6,6 +6,7 @@
     <?php
     echo $this->Html->css(array(
         '/bootflat/css/bootstrap.min.css',
+        'https://ihatetomatoes.net/demos/css3-preloader-transition/css/main.css',
         '/bootflat/css/site.min.css',
         '/theme-assets/css/font-awesome.min',
         '/circle-slideshow/css/default.css',
