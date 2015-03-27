@@ -44,6 +44,18 @@ return [
                         'options' => ['role' => 'button', 'class' => 'btn btn-warning']
                     ]
                 ]
+            ],
+            'links' => [
+                [
+                    'title' => __('View Portfolio'),
+                    'url' => '/portfolio',
+                    'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                ],
+                [
+                    'title' => __('View Resume'),
+                    'url' => '/resume',
+                    'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                ]
             ]
         ]
     ],

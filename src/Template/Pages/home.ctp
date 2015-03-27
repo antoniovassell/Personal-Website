@@ -77,71 +77,12 @@
 </div>
 <div class="container-fluid blog-snip">
     <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="text-center"><?php echo __('Blog'); ?></h1>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-
-                <div class="caption text-center"><h3>Thumbnail label</h3>
-
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                        at eget metus. Nullam id ...</p>
-
-                    <p class="text-center">
-                        <?= $this->Html->link(__('Read More'), '#', ['role' => 'button', 'class' => 'btn btn-warning']); ?>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-
-                <div class="caption text-center"><h3>Thumbnail label</h3>
-
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                        at eget metus. Nullam id ...</p>
-
-                    <p class="text-center">
-                        <?= $this->Html->link(__('Read More'), '#', ['role' => 'button', 'class' => 'btn btn-warning']); ?>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-
-                <div class="caption text-center"><h3>Thumbnail label</h3>
-
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                        at eget metus. Nullam id ...</p>
-
-                    <p class="text-center">
-                        <?= $this->Html->link(__('Read More'), '#', ['role' => 'button', 'class' => 'btn btn-warning']); ?>
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <div class="thumbnail">
-                <div class="caption text-center"><h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                        at eget metus. Nullam id ...</p>
-
-                    <p class="text-center">
-                        <?= $this->Html->link(__('Read More'), '#', ['role' => 'button', 'class' => 'btn btn-warning']); ?>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <p class="text-center"><a href="#" class="btn btn-warning" role="button">View All</a></p>
+        <?php
+        $cell = $this->cell('Post::recent', ['limit' => 4]);
+        echo $cell;
+        ?>
     </div>
 </div>
-
 <div class="container">
     <?= $this->element('Frontend/showcase', ['showcaseData' => Cake\Core\Configure::read('ShowcaseData.portfolio')]); ?>
 </div>
@@ -163,3 +104,4 @@
         margin-top: -150px;
     }
 </style>
+

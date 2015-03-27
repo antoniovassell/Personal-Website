@@ -9,7 +9,9 @@
             <div class="thumbnail">
                 <div class="caption text-center">
                     <?php
+                    if (isset($item['image'])) {
                         echo $this->Html->image($item['image']);
+                    }
                     ?>
                     <h3><?= $item['title']; ?></h3>
 
@@ -24,6 +26,9 @@
     <?php endforeach; ?>
 </div>
 <p class="text-center">
-    <?= $this->Html->link(__('View Portfolio'), '/portfolio', ['role' => 'button', 'class' => 'btn btn-warning']); ?>
-    <?= $this->Html->link(__('View Resume'), '/resume', ['role' => 'button', 'class' => 'btn btn-warning']); ?>
+    <?php if (isset($showcaseData['links'])): ?>
+        <?php foreach($showcaseData['links'] as $link): ?>
+            <?= $this->Html->link($link['title'], $link['url'], $link['options']); ?>
+        <?php endforeach; ?>
+    <?php endif; ?>
 </p>
