@@ -57,6 +57,137 @@ return [
                     'options' => ['role' => 'button', 'class' => 'btn btn-warning']
                 ]
             ]
+        ],
+        'portfolio_full' => [
+            'items' => [
+                [
+                    'image' => '/circle-slideshow/images/1.jpg',
+                    'title' => 'Thumbnail label',
+                    'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
+                    'link' => [
+                        'title' => __('Read More'),
+                        'url' => '#',
+                        'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                    ]
+                ],
+                [
+                    'image' => '/circle-slideshow/images/2.jpg',
+                    'title' => 'Thumbnail label',
+                    'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
+                    'link' => [
+                        'title' => __('Read More'),
+                        'url' => '#',
+                        'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                    ]
+                ],
+                [
+                    'image' => '/circle-slideshow/images/3.jpg',
+                    'title' => 'Thumbnail label',
+                    'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
+                    'link' => [
+                        'title' => __('Read More'),
+                        'url' => '#',
+                        'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                    ]
+                ],
+                [
+                    'image' => '/circle-slideshow/images/4.jpg',
+                    'title' => 'Thumbnail label',
+                    'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
+                    'link' => [
+                        'title' => __('Read More'),
+                        'url' => '#',
+                        'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                    ]
+                ],
+                [
+                    'image' => '/circle-slideshow/images/5.jpg',
+                    'title' => 'Thumbnail label',
+                    'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
+                    'link' => [
+                        'title' => __('Read More'),
+                        'url' => '#',
+                        'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                    ]
+                ],
+                [
+                    'image' => '/circle-slideshow/images/6.jpg',
+                    'title' => 'Thumbnail label',
+                    'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
+                    'link' => [
+                        'title' => __('Read More'),
+                        'url' => '#',
+                        'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                    ]
+                ],
+                [
+                    'image' => '/circle-slideshow/images/7.jpg',
+                    'title' => 'Thumbnail label',
+                    'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
+                    'link' => [
+                        'title' => __('Read More'),
+                        'url' => '#',
+                        'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                    ]
+                ],
+                [
+                    'image' => '/circle-slideshow/images/8.jpg',
+                    'title' => 'Thumbnail label',
+                    'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
+                    'link' => [
+                        'title' => __('Read More'),
+                        'url' => '#',
+                        'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                    ]
+                ],
+                [
+                    'image' => '/circle-slideshow/images/1.jpg',
+                    'title' => 'Thumbnail label',
+                    'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
+                    'link' => [
+                        'title' => __('Read More'),
+                        'url' => '#',
+                        'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                    ]
+                ],
+                [
+                    'image' => '/circle-slideshow/images/2.jpg',
+                    'title' => 'Thumbnail label',
+                    'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
+                    'link' => [
+                        'title' => __('Read More'),
+                        'url' => '#',
+                        'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                    ]
+                ],
+                [
+                    'image' => '/circle-slideshow/images/3.jpg',
+                    'title' => 'Thumbnail label',
+                    'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
+                    'link' => [
+                        'title' => __('Read More'),
+                        'url' => '#',
+                        'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                    ]
+                ],
+                [
+                    'image' => '/circle-slideshow/images/4.jpg',
+                    'title' => 'Thumbnail label',
+                    'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
+                    'link' => [
+                        'title' => __('Read More'),
+                        'url' => '#',
+                        'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                    ]
+                ]
+            ],
+            'links' => [
+                [
+                    'title' => __('View Resume'),
+                    'url' => '/resume',
+                    'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                ]
+            ]
         ]
     ],
     'JombotronData' => [

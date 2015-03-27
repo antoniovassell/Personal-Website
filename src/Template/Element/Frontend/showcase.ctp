@@ -1,6 +1,8 @@
 <div class="row">
     <div class="col-md-12">
+        <?php if (isset($showcaseData['title'])): ?>
         <h1 class="text-center"><?= $showcaseData['title']; ?></h1>
+        <?php endif; ?>
     </div>
 </div>
 <div class="row">
@@ -13,7 +15,9 @@
                         echo $this->Html->image($item['image']);
                     }
                     ?>
-                    <h3><?= $item['title']; ?></h3>
+                    <?php if (isset($item['title'])): ?>
+                        <h3><?= $item['title']; ?></h3>
+                    <?php endif; ?>
 
                     <p><?= $item['description']; ?></p>
 
