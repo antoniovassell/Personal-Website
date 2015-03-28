@@ -2,24 +2,30 @@
     <?php
     $portfolioName = $this->request->params['name'];
     $portfolioData = \Cake\Core\Configure::read('ShowcaseData.portfolio_full.items');
-    $portfolioData = $portfolioData[0];
+    $portfolioData = $portfolioData[$portfolioName];
     ?>
     <br/>
     <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <div class="jumbotron">
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <div id="carousel-generic" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
+                            <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-generic" data-slide-to="1" class=""></li>
+                            <li data-target="#carousel-generic" data-slide-to="2" class=""></li>
+
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                            <?php $imageCount = count($portfolioData['media']); ?>
+                            <?php for ($index = 1; $index < $imageCount; $index++): ?>
+                            <li data-target="#carousel-generic" data-slide-to="<?= $index; ?>" class=""></li>
+                            <?php endfor; ?>
                         </ol>
                         <div class="carousel-inner">
                             <div class="item active">
-                                <?= $this->Html->image($portfolioData['images'][0]['src']); ?>
+                                <?= $this->Html->image($portfolioData['media'][0]['src']); ?>
                             </div>
-                            <?php foreach ($portfolioData['images'] as $key => $image): ?>
+                            <?php foreach ($portfolioData['media'] as $key => $image): ?>
                                 <?php
                                 if ($key == 0) {
                                     continue;
@@ -45,9 +51,8 @@
                 <h2><?= $portfolioData['title']; ?></h2>
                 <p><?= $portfolioData['description']; ?></p>
                 <div>
-                    <?php
-                    $tags = ['Web Development', 'Data Science', 'Jquery', 'CakePHP'];
-                    echo $this->element('tags', ['tags' => $tags]);
+                    <h6><?= __('Keywords'); ?></h6>
+                    <?= $this->element('tags', ['tags' => $portfolioData['keywords']]);
                     ?>
                 </div>
             </div>

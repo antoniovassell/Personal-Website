@@ -60,7 +60,7 @@ return [
         ],
         'portfolio_full' => [
             'items' => [
-                [
+                'one' => [
                     'image' => 'http://blog.doteasy.com/wp-content/uploads/2014/04/most_annoying_feature_new.png',
                     'title' => 'Thumbnail label',
                     'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
@@ -69,7 +69,8 @@ return [
                         'url' => '/portfolio/one',
                         'options' => ['role' => 'button', 'class' => 'btn btn-warning']
                     ],
-                    'images' => [
+                    'keywords' => ['Web Development', 'Data Science', 'Jquery', 'CakePHP'],
+                    'media' => [
                         [
                             'title' => '/circle-slideshow/images/1.jpg',
                             'src' => 'http://blog.doteasy.com/wp-content/uploads/2014/04/most_annoying_feature_new.png',
