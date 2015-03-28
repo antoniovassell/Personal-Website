@@ -48,6 +48,7 @@
                         <br/>
                         <br/>
                         <div class="post-keywords" data-sr>
+                            <?php $post->tags['link'] = ''; ?>
                             <?= $this->element('tags', ['tags' => $post->tags]); ?>
                         </div>
                         <br/>
