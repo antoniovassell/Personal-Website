@@ -80,11 +80,11 @@ echo $this->Html->script(array(
 <script>
     $( function() {
         'use strict';
-        /*window.sr= new scrollReveal({
+        window.sr= new scrollReveal({
             reset: true,
             move: '50px',
             mobile: true
-        });*/
+        });
         $( '.fc-slideshow' ).flipshow();
     } );
 </script>
