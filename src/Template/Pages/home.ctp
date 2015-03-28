@@ -1,6 +1,6 @@
 <?php $this->layout = 'home'; ?>
 <div class="fc-slideshow-container">
-    <div class="main">
+    <div class="main" data-sr>
         <div id="fc-slideshow" class="fc-slideshow">
             <ul class="fc-slides">
                 <li>
@@ -19,23 +19,11 @@
                     <?= $this->Html->image('/circle-slideshow/images/4.jpg'); ?>
                     <h3>World Leader</h3>
                 </li>
-                <li>
-                    <?= $this->Html->image('/circle-slideshow/images/5.jpg'); ?>
-                    <h3>Blog</h3>
-                </li>
-                <li>
-                    <?= $this->Html->image('/circle-slideshow/images/6.jpg'); ?>
-                    <h3>Portfolio</h3>
-                </li>
-                <li>
-                    <?= $this->Html->image('/circle-slideshow/images/7.jpg'); ?>
-                    <h3>Contact</h3>
-                </li>
             </ul>
         </div>
     </div>
 </div>
-<div class="navbar navbar-default" role="navigation">
+<div class="navbar navbar-default" role="navigation" data-sr>
     <?php echo $this->element('header'); ?>
 </div>
 <div >
@@ -43,12 +31,12 @@
         <div class="">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12" data-sr>
                         <h1 class="text-center"><?php echo __('About Me'); ?></h1>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-md-8" data-sr>
                         <p>I am an aspiring web developer with 3 years experience. My skills sets currently revolves around CakePHP, one of the most popular PHP MVC frameworks around, built for Rapid Application Development.</p>
 
                         <p>I am also interested in Artificial Intelligence and Medical Science.</p>
@@ -57,7 +45,7 @@
 
                         <p>I Currently employed at CakeDC as a CakePHP developer. If you have an idea that you are passionate about, lets talk.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" data-sr>
                         <div class="main">
                             <div id="fc-about-me" class="fc-slideshow">
                                 <ul class="fc-slides">
@@ -91,9 +79,6 @@
     <div class="container">
         <?= $this->element('Frontend/jombotron', ['jombotronData' => Cake\Core\Configure::read('JombotronData.featured_websites')]); ?>
     </div>
-</div>
-<div class="container">
-
 </div>
 <style>
     #fc-about-me {

@@ -1,3 +1,4 @@
+<?php $this->start('pageheader'); ?>
 <div class="container-fluid blog-header">
     <div class="container">
         <div class="row">
@@ -11,12 +12,13 @@
 </div>
 <br/>
 <br/>
+<?php $this->end(); ?>
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="posts-view">
                 <?php if ($post->image): ?>
-                    <div class="post-image">
+                    <div class="post-image" data-sr>
                         <span><?= $this->Html->image($post->image); ?></span>
                     </div>
                 <?php endif; ?>
@@ -45,7 +47,7 @@
                         <?= $post->content; ?>
                         <br/>
                         <br/>
-                        <div class="post-keywords">
+                        <div class="post-keywords" data-sr>
                             <?= $this->element('tags', ['tags' => $post->tags]); ?>
                         </div>
                         <br/>

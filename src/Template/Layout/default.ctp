@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php // $this->assign('title', $title); ?>
     <?= $this->element('meta'); ?>
-
     <?php
     echo $this->Html->css(array(
         '/bootflat/css/bootstrap.min.css',
-        'https://ihatetomatoes.net/demos/css3-preloader-transition/css/main.css',
         '/bootflat/css/site.min.css',
         '/theme-assets/css/font-awesome.min',
         '/circle-slideshow/css/default.css',
@@ -35,52 +34,59 @@
         #content-wrapper {
             margin-top: 5px;
         }
+        .m-scene .scene_element {
+            -webkit-animation-duration: 0.25s;
+            animation-duration: 0.25s;
+            -webkit-transition-timing-function: ease-in;
+            transition-timing-function: ease-in;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both; }
     </style>
+
 </head>
 
 <body>
-
-<!-- Fixed navbar -->
-<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <?php echo $this->element('header'); ?>
-</div>
-<br/>
-<br/>
-<br/>
-<div id="content-wrapper">
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-
+<div id="main" class="m-scene ">
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <?php echo $this->element('header'); ?>
     </div>
-    <?php echo $this->fetch('content'); ?>
+    <br/>
+    <br/>
+    <br/>
+    <div id="content-wrapper" >
+        <?php
+        echo $this->fetch('pageheader');
+        ?>
+        <div class="scene_element scene_element--fadein">
+            <?php echo $this->fetch('content'); ?>
+        </div>
+    </div>
+    <?php echo $this->element('footer'); ?>
 </div>
-
-<?php echo $this->element('footer'); ?>
-
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 
 <?php
-// echo $this->AssetCompress->script('libs');
 echo $this->Html->script(array(
     'jquery.min',
-    '/theme-assets/js/bootstrap.min.js',
-    '/theme-assets/js/retina-1.1.0.js',
-    '/theme-assets/js/jquery.hoverdir.js',
-    '/theme-assets/js/jquery.hoverex.min.js',
-    '/theme-assets/js/jquery.prettyPhoto.js',
-    '/theme-assets/js/jquery.isotope.min.js',
-    '/theme-assets/js/custom.js',
-    'jquery-parallax/jquery.parallax-1.1.3',
-    '/js-plugins/slitslider/js/jquery.ba-cond.min.js',
-    '/js-plugins/slitslider/js/jquery.slitslider.js',
+    '/bootflat/js/bootstrap.min.js',
+    'http://scrollrevealjs.org/js/scrollReveal.min.js?ver=2.1.0',
     'app.js'
 ));
 ?>
 <?php echo $this->fetch('script'); ?>
+<script>
+    $( function() {
+        'use strict';
+        window.sr= new scrollReveal({
+            reset: true,
+            move: '50px',
+            mobile: true
+        });
+        $( '.fc-slideshow' ).flipshow();
+    } );
+</script>
 </body>
 </html>

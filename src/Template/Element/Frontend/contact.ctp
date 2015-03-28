@@ -1,3 +1,4 @@
+<?php $this->start('pageheader'); ?>
 <div id="contact-map-wrap">
     <div id="map_canvas"></div>
     <div class="container">
@@ -9,9 +10,10 @@
         </div>
     </div>
 </div>
-<div class="container">
+<?php $this->end(); ?>
+<div class="container" data-sr>
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4" data-sr>
             <h3><?php echo __('Message'); ?></h3>
             <hr />
             <?php echo $this->Form->create('Message', array('url' => array('controller' => 'messages', 'action' => 'send_message'))); ?>
@@ -25,7 +27,7 @@
             <br/>
             <div class="clearfix"></div>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" data-sr>
             <h3><?php echo __('Social'); ?></h3>
             <hr />
             <ul id="get-social">
@@ -49,7 +51,7 @@
                 </li>
             </ul>
         </div>
-        <div class="col-lg-4">
+        <div class="col-lg-4" data-sr>
             <h3><?php echo __('Contact Details'); ?></h3>
             <hr />
             <address>
@@ -62,10 +64,10 @@
     </div>
 </div>
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+<!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>-->
 <script type="text/javascript">
     // When the window has finished loading create our google map below
-    google.maps.event.addDomListener(window, 'load', init);
+    /*google.maps.event.addDomListener(window, 'load', init);*/
 
     function init() {
         // Basic options for a simple Google Map
@@ -96,4 +98,13 @@
         // Create the Google Map using our element and options defined above
         var map = new google.maps.Map(mapElement, mapOptions);
     }
+    function loadScript() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp' +
+        '&signed_in=true&callback=init';
+        document.body.appendChild(script);
+    }
+
+    window.onload = loadScript;
 </script>

@@ -8,7 +8,7 @@
         'https://ihatetomatoes.net/demos/css3-preloader-transition/css/main.css',
         '/bootflat/css/bootstrap.min.css',
         '/bootflat/css/site.min.css',
-        '/theme-assets/css/font-awesome.min',
+        '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
         '/circle-slideshow/css/default.css',
         '/circle-slideshow/css/component.css',
         '/bootflat/bootflat/css/bootflat.min.css',
@@ -31,58 +31,14 @@
         echo $this->element('google_analytics');
     }
     ?>
-    <style type="text/css">
-        .back-link a {
-            color: #4ca340;
-            text-decoration: none;
-            border-bottom: 1px #4ca340 solid;
-        }
-        .back-link a:hover,
-        .back-link a:focus {
-            color: #408536;
-            text-decoration: none;
-            border-bottom: 1px #408536 solid;
-        }
-        h1 {
-            height: 100%;
-            /* The html and body elements cannot have any padding or margin. */
-            margin: 0;
-            font-size: 14px;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 32px;
-            margin-bottom: 3px;
-        }
-        .entry-header {
-            text-align: left;
-            margin: 0 auto 50px auto;
-            width: 80%;
-            max-width: 978px;
-            position: relative;
-            z-index: 10001;
-        }
-        #demo-content {
-            padding-top: 100px;
-        }
-        #carbonads-container {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000000;
-        }
-    </style>
 </head>
 
 <body>
 
 <div id="content-wrapper">
-    <div id="loader-wrapper">
-        <div id="loader"></div>
-
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-
+    <div class="scene_element scene_element--fadein">
+        <?php echo $this->fetch('content'); ?>
     </div>
-    <?php echo $this->fetch('content'); ?>
 </div>
 
 <?php echo $this->element('footer'); ?>
@@ -95,23 +51,23 @@
 // echo $this->AssetCompress->script('libs');
 echo $this->Html->script(array(
     'jquery.min',
-    '/theme-assets/js/bootstrap.min.js',
-    '/theme-assets/js/retina-1.1.0.js',
-    '/theme-assets/js/jquery.hoverdir.js',
-    '/theme-assets/js/jquery.hoverex.min.js',
-    '/theme-assets/js/jquery.prettyPhoto.js',
-    '/theme-assets/js/jquery.isotope.min.js',
-    '/theme-assets/js/custom.js',
-    'jquery-parallax/jquery.parallax-1.1.3',
-    '/js-plugins/slitslider/js/jquery.ba-cond.min.js',
-    '/js-plugins/slitslider/js/jquery.slitslider.js',
+    '/bootflat/js/bootstrap.min.js',
+    '/bootflat/bootflat/js/bootflat.min.js',
     '/circle-slideshow/js/jquery.flipshow.js',
+    /*'http://mynameismatthieu.com/WOW/dist/wow.min.js',*/
+    'http://scrollrevealjs.org/js/scrollReveal.min.js?ver=2.1.0',
     'app.js'
 ));
 ?>
 <?php echo $this->fetch('script'); ?>
 <script>
     $( function() {
+        'use strict';
+        window.sr= new scrollReveal({
+            reset: true,
+            move: '0px',
+            mobile: true
+        });
         $( '.fc-slideshow' ).flipshow();
     } );
 </script>

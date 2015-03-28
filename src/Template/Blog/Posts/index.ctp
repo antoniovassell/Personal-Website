@@ -1,3 +1,4 @@
+<?php $this->start('pageheader'); ?>
 <div class="container-fluid blog-header">
     <div class="container">
         <div class="row">
@@ -11,6 +12,7 @@
 </div>
 <br/>
 <br/>
+<?php $this->end(); ?>
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
@@ -20,7 +22,7 @@
                     </div>
                     <div class="col-md-9 posts-list">
                         <?php foreach ($posts as $post): ?>
-                            <div>
+                            <div data-sr>
                                 <h3>
                                     <?= $this->Html->link($post->title, ['controller' => 'posts', 'action' => 'view', $post->id]); ?>
                                 </h3>

@@ -1,3 +1,4 @@
+<?php $this->start('pageheader'); ?>
 <div class="container-fluid blog-header">
     <div class="container">
         <div class="row">
@@ -11,7 +12,7 @@
 </div>
 <br/>
 <br/>
-
+<?php $this->end(); ?>
 <div class="container">
     <?= $this->element('Frontend/showcase', ['showcaseData' => Cake\Core\Configure::read('ShowcaseData.portfolio_full')]); ?>
 </div>
