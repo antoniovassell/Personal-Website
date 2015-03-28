@@ -41,6 +41,7 @@
                                     <?= $post->preview; ?>
                                 </div>
                                 <div class="post-keywords">
+                                    <?php $post->tags['link'] = ''; ?>
                                     <?= $this->element('tags', ['tags' => $post->tags]); ?>
                                 </div>
                                 <br/>
