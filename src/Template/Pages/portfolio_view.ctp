@@ -12,10 +12,6 @@
                     <div id="carousel-generic" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-generic" data-slide-to="1" class=""></li>
-                            <li data-target="#carousel-generic" data-slide-to="2" class=""></li>
-
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                             <?php $imageCount = count($portfolioData['media']); ?>
                             <?php for ($index = 1; $index < $imageCount; $index++): ?>
                             <li data-target="#carousel-generic" data-slide-to="<?= $index; ?>" class=""></li>
@@ -36,10 +32,10 @@
                             </div>
                             <?php endforeach; ?>
                         </div>
-                        <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
                             <span class="glyphicon glyphicon-chevron-left"></span>
                         </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <a class="right carousel-control" href="#carousel-generic" data-slide="next">
                             <span class="glyphicon glyphicon-chevron-right"></span>
                         </a>
                     </div>
