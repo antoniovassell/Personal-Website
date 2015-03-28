@@ -10,7 +10,7 @@ return [
                     'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
                     'link' => [
                         'title' => __('Read More'),
-                        'url' => '#',
+                        'url' => '/portfolio/one',
                         'options' => ['role' => 'button', 'class' => 'btn btn-warning']
                     ]
                 ],
@@ -61,13 +61,30 @@ return [
         'portfolio_full' => [
             'items' => [
                 [
-                    'image' => '/circle-slideshow/images/1.jpg',
+                    'image' => 'http://blog.doteasy.com/wp-content/uploads/2014/04/most_annoying_feature_new.png',
                     'title' => 'Thumbnail label',
                     'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...',
                     'link' => [
                         'title' => __('Read More'),
-                        'url' => '#',
+                        'url' => '/portfolio/one',
                         'options' => ['role' => 'button', 'class' => 'btn btn-warning']
+                    ],
+                    'images' => [
+                        [
+                            'title' => '/circle-slideshow/images/1.jpg',
+                            'src' => 'http://blog.doteasy.com/wp-content/uploads/2014/04/most_annoying_feature_new.png',
+                            'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...'
+                        ],
+                        [
+                            'title' => '/circle-slideshow/images/1.jpg',
+                            'src' => '/circle-slideshow/images/3.jpg',
+                            'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...'
+                        ],
+                        [
+                            'title' => '/circle-slideshow/images/1.jpg',
+                            'src' => '/circle-slideshow/images/2.jpg',
+                            'description' => 'Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...'
+                        ]
                     ]
                 ],
                 [
