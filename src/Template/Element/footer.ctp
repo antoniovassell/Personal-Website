@@ -55,7 +55,7 @@ canvas {
     var footer = document.getElementById('footercont');
 
     var springs = [],
-        MAX_SPRINGS = 250;
+        MAX_SPRINGS = 120;
 
     canvas.width = window.innerWidth;
     canvas.height = 200;
@@ -205,7 +205,7 @@ canvas {
     function tick()
     {
         if (Math.random() > 0.95)
-            springs[Math.floor(Math.random() * MAX_SPRINGS)].p = 150;
+            springs[Math.floor(Math.random() * MAX_SPRINGS)].p = 50;
 
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         oc.animate();
