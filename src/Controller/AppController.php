@@ -47,6 +47,9 @@ class AppController extends Controller
                     'MyDateTime'
                 ]
             ]
+        ],
+        'Frontend' => [
+            'className' => 'Frontend.Frontend'
         ]
     ];
 
