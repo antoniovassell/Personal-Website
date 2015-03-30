@@ -14,8 +14,6 @@
  */
 namespace App\Controller;
 
-use Cake\Auth\DefaultPasswordHasher;
-use Cake\Auth\PasswordHasherFactory;
 use Cake\Controller\Controller;
 use Cake\Event\Event;
 

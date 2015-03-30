@@ -10,6 +10,5 @@
 !/tmp/logs/empty
 !/tmp/sessions/empty
 !/tmp/tests/empty
-/plugins
 /.idea
 composer.lock
